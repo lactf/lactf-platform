@@ -38,5 +38,5 @@ jobs:
       with:
         context: .
         push: true
-        tags: lactf-platform:${GITHUB_REF##*/}-$(date +%s)
+        tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
