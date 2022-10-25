@@ -1,0 +1,31 @@
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+/node_modules
+
+/dist
+/.env
+/data
+/conf.d/*
+!/conf.d/.keep
+/docs/site
+
+# Upload provider dir
+/uploads
+
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN
+/package-lock.json
+
+*.swp
+
+# nyc test runner
+/.nyc_output
+/coverage
+
+# preact-cli build size plugin
+size-plugin.json
