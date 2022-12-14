@@ -4,7 +4,7 @@ meta:
   imageUrl: https://static.lac.tf/lactf-banner.gif
 origin: https://2023.lac.tf
 homeContent: |
-  # This is a test
+  # This is a test!
   ![LACTF Banner](https://static.lac.tf/lactf-banner.gif)
 
   hello from LACTF!
