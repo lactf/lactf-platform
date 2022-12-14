@@ -8,14 +8,39 @@ steps:
               "docker pull us-west1-docker.pkg.dev/$PROJECT_ID/lactf-infra/lactf-platform:latest || exit 0",
           ]
     - name: "gcr.io/cloud-builders/docker"
+      entrypoint: "bash"
       args:
           [
-              "build",
-              "--cache-from",
-              "us-west1-docker.pkg.dev/$PROJECT_ID/lactf-infra/lactf-platform:latest",
-              "-t",
-              "us-west1-docker.pkg.dev/$PROJECT_ID/lactf-infra/lactf-platform:latest",
-              ".",
+              "-c",
+              "docker pull us-west1-docker.pkg.dev/$PROJECT_ID/lactf-infra/lactf-platform-build-layer:latest || exit 0",
+          ]
+    - name: "gcr.io/cloud-builders/docker"
+      args:
+          - "build"
+          - "--cache-from"
+          - "us-west1-docker.pkg.dev/$PROJECT_ID/lactf-infra/lactf-platform-build-layer:latest"
+          - "--target"
+          - "build"
+          - "-t"
+          - "us-west1-docker.pkg.dev/$PROJECT_ID/lactf-infra/lactf-platform-build-layer:latest"
+          - "."
+
+    - name: "gcr.io/cloud-builders/docker"
+      args:
+          - "build"
+          - "--cache-from"
+          - "us-west1-docker.pkg.dev/$PROJECT_ID/lactf-infra/lactf-platform:latest"
+          - "--cache-from"
+          - "us-west1-docker.pkg.dev/$PROJECT_ID/lactf-infra/lactf-platform-build-layer:latest"
+          - "-t"
+          - "us-west1-docker.pkg.dev/$PROJECT_ID/lactf-infra/lactf-platform:latest"
+          - "."
+
+    - name: "gcr.io/cloud-builders/docker"
+      args:
+          [
+              "push",
+              "us-west1-docker.pkg.dev/$PROJECT_ID/lactf-infra/lactf-platform-build-layer:latest",
           ]
     - name: "gcr.io/cloud-builders/docker"
       args:

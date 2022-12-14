@@ -42,7 +42,7 @@ export default withStyles({
   list: {
     borderBottomColor: '#333 !important',
     '& li.selected a': {
-      color: 'rgb(240,61,77) !important'
+      color: '#f44d8a !important'
     }
   }
 }, Header)
