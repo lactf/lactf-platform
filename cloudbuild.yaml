@@ -63,5 +63,6 @@ steps:
 images:
     - "us-west1-docker.pkg.dev/$PROJECT_ID/lactf-infra/lactf-platform:latest"
 
+logsBucket: 'gs://la-ctf_cloudbuild'
 options:
-    logging: CLOUD_LOGGING_ONLY
+    logging: GCS_ONLY
