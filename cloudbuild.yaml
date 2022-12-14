@@ -62,3 +62,6 @@ steps:
 
 images:
     - "us-west1-docker.pkg.dev/$PROJECT_ID/lactf-infra/lactf-platform:latest"
+
+options:
+    logging: CLOUD_LOGGING_ONLY
