@@ -218,7 +218,7 @@ function Graph ({ graphData, classes }) {
 export default withStyles({
   root: {
     marginBottom: '20px',
-    background: '#222',
+    background: 'var(--bg-dark)',
     '& .frame__body': {
       padding: '20px'
     }
@@ -227,7 +227,7 @@ export default withStyles({
     position: 'fixed',
     pointerEvents: 'none',
     background: '#fff',
-    color: '#222',
+    color: 'var(--bg-dark)',
     padding: '5px 10px',
     borderRadius: '5px',
     margin: '5px',

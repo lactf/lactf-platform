@@ -62,7 +62,7 @@ export default withStyles({
     }
   },
   modal: {
-    background: '#222',
+    background: 'var(--bg-dark)',
     color: '#fff',
     maxWidth: 'initial'
   },

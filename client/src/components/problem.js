@@ -159,7 +159,7 @@ export default withStyles({
   frame: {
     marginBottom: '1em',
     paddingBottom: '0.625em',
-    background: '#222'
+    background: 'var(--bg-dark)'
   },
   description: {
     '& a': {
@@ -202,7 +202,7 @@ export default withStyles({
     background: '#111',
     color: '#fff',
     '&:hover': {
-      background: '#222'
+      background: 'var(--bg-dark)'
     }
   }
 }, Problem)

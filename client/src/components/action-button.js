@@ -4,7 +4,7 @@ const ActionButton = withStyles({
   button: {
     padding: '16px !important',
     color: '#fff',
-    background: '#222',
+    background: 'var(--bg-dark)',
     boxShadow: 'rgba(250,250,250,0.6) 0px 0px 1rem 0px',
     fontSize: '20px',
     borderRadius: '1rem',

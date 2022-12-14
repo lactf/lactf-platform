@@ -220,7 +220,7 @@ export default withStyles({
   frame: {
     marginBottom: '1em',
     paddingBottom: '0.625em',
-    background: '#222'
+    background: 'var(--bg-dark)'
   },
   row: {
     justifyContent: 'center',

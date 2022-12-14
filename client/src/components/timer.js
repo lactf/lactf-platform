@@ -5,7 +5,7 @@ import { formatAbsoluteTimeWithTz } from '../util/time'
 
 const Timer = withStyles({
   card: {
-    background: '#222',
+    background: 'var(--bg-dark)',
     margin: 'auto'
   },
   section: {

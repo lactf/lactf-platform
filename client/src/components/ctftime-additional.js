@@ -10,7 +10,7 @@ export default withStyles({
   root: {
     padding: '1.5em',
     '& input': {
-      background: '#222',
+      background: 'var(--bg-dark)',
       color: '#fff !important'
     }
   },

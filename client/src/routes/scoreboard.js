@@ -21,7 +21,7 @@ const Scoreboard = withStyles({
   frame: {
     paddingBottom: '1.5em',
     paddingTop: '2.125em',
-    background: '#222',
+    background: 'var(--bg-dark)',
     '& .frame__subtitle': {
       color: '#fff'
     },

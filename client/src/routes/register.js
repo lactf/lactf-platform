@@ -27,7 +27,7 @@ export default withStyles({
     padding: '1.5em',
     maxWidth: '500px',
     '& input': {
-      background: '#222',
+      background: 'var(--bg-dark)',
       color: '#fff !important'
     }
   },

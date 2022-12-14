@@ -36,4 +36,4 @@ jobs:
 
     # Build and push image to Google Container Registry
     - name: Build
-      run: gcloud builds submit --region=us-west2
+      run: gcloud beta builds submit --region=us-west2

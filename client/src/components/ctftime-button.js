@@ -10,9 +10,9 @@ export default withStyles({
     margin: 'auto',
     lineHeight: '0',
     padding: '10px',
-    background: '#222',
+    background: 'var(--bg-dark)',
     '&:hover': {
-      background: '#222'
+      background: 'var(--bg-dark)'
     },
     '& svg': {
       width: '150px'

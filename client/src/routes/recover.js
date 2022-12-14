@@ -69,7 +69,7 @@ export default withStyles({
     maxWidth: '500px'
   },
   input: {
-    background: '#222',
+    background: 'var(--bg-dark)',
     color: '#fff !important'
   },
   root: {

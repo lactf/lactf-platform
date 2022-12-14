@@ -385,10 +385,10 @@ const Profile = ({ uuid, classes }) => {
         {isPrivate
           ? (
             <PrivateSolvesCard solves={solves} />
-            )
+          )
           : (
             <PublicSolvesCard solves={solves} />
-            )}
+          )}
       </div>
     </div>
   )
@@ -402,7 +402,7 @@ export default withStyles({
     maxWidth: '1500px',
     margin: 'auto',
     '& .card': {
-      background: '#222',
+      background: 'var(--bg-dark)',
       marginBottom: '20px'
     },
     '& input, & select, & option': {
@@ -420,6 +420,6 @@ export default withStyles({
     marginLeft: '10px'
   },
   errorCard: {
-    background: '#222'
+    background: 'var(--bg-dark)'
   }
 }, Profile)
