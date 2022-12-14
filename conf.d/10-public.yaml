@@ -2,7 +2,7 @@ ctfName: LACTF
 meta:
   description: 'LACTF challenge list'
   imageUrl: https://static.lac.tf/lactf-banner.gif
-origin: https://2023.lac.tf
+origin: https://platform.lac.tf
 homeContent: |
   # This is a test!
   ![LACTF Banner](https://static.lac.tf/lactf-banner.gif)
