@@ -34,3 +34,8 @@ divisionACLs:
 
 sponsors: ["sponsor 1", "Google Cloud"]
 faviconUrl: https://static.lac.tf/flag.ico
+recaptcha:
+  protectedActions:
+    - register
+    - recover
+    - setEmail
