@@ -1,0 +1,8 @@
+FROM node:12.16.3-buster-slim
+WORKDIR /app
+
+COPY package.json yarn.lock ./
+RUN yarn install --frozen-lockfile && yarn cache clean
+
+COPY . .
+RUN yarn build
