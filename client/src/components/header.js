@@ -19,11 +19,10 @@ function Header ({ classes, paths }) {
             </Match>
           )
         }
-        { loggedIn &&
+        {loggedIn &&
           <li>
             <LogoutButton class={classes.link} />
-          </li>
-        }
+          </li>}
       </ul>
     </div>
   )

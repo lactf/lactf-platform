@@ -89,43 +89,45 @@ const SolvesDialog = withStyles({
     <Modal {...props} open={solves !== null} onClose={onClose}>
       {solves !== null && (
         <Fragment>
-          {solves.length === 0 ? (
-            <div class={classes.empty}>
-              <div class={classes.icon}>
-                <Clock />
-              </div>
-              <h5>{challName} has no solves.</h5>
-            </div>
-          ) : (
-            <Fragment>
-              <div class='modal-header'>
-                <div class='modal-title'>Solves for {challName}</div>
-              </div>
-              <div class={`modal-body ${classes.modalBody}`} ref={modalBodyRef}>
-                <div class={classes.table}>
-                  <div class={classes.label}>#</div>
-                  <div class={classes.label}>Team</div>
-                  <div class={classes.label}>Solve time</div>
-                  {solves.map((solve, i) => (
-                    <Fragment>
-                      <div class={`${classes.inlineLabel} ${classes.number}`}>#</div>
-                      <div class={classes.number}>{(page - 1) * pageSize + i + 1}</div>
-                      <div class={classes.inlineLabel}>Team</div>
-                      <div class={classes.name}>
-                        <a href={`/profile/${solve.userId}`}>{solve.userName}</a>
-                      </div>
-                      <div class={classes.inlineLabel}>Solve time</div>
-                      <div>{formatRelativeTime(solve.createdAt)}</div>
-                    </Fragment>
-                  ))}
+          {solves.length === 0
+            ? (
+              <div class={classes.empty}>
+                <div class={classes.icon}>
+                  <Clock />
                 </div>
-                <Pagination
-                  {...{ totalItems: solveCount, pageSize, page, setPage }}
-                  numVisiblePages={9}
-                />
+                <h5>{challName} has no solves.</h5>
               </div>
-            </Fragment>
-          )}
+              )
+            : (
+              <Fragment>
+                <div class='modal-header'>
+                  <div class='modal-title'>Solves for {challName}</div>
+                </div>
+                <div class={`modal-body ${classes.modalBody}`} ref={modalBodyRef}>
+                  <div class={classes.table}>
+                    <div class={classes.label}>#</div>
+                    <div class={classes.label}>Team</div>
+                    <div class={classes.label}>Solve time</div>
+                    {solves.map((solve, i) => (
+                      <Fragment>
+                        <div class={`${classes.inlineLabel} ${classes.number}`}>#</div>
+                        <div class={classes.number}>{(page - 1) * pageSize + i + 1}</div>
+                        <div class={classes.inlineLabel}>Team</div>
+                        <div class={classes.name}>
+                          <a href={`/profile/${solve.userId}`}>{solve.userName}</a>
+                        </div>
+                        <div class={classes.inlineLabel}>Solve time</div>
+                        <div>{formatRelativeTime(solve.createdAt)}</div>
+                      </Fragment>
+                    ))}
+                  </div>
+                  <Pagination
+                    {...{ totalItems: solveCount, pageSize, page, setPage }}
+                    numVisiblePages={9}
+                  />
+                </div>
+              </Fragment>
+              )}
           <div class='modal-footer'>
             <div class='btn-container u-inline-block'>
               <button class={`btn-small outline ${classes.button}`} onClick={wrappedOnClose}>Close</button>

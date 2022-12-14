@@ -57,14 +57,15 @@ const SummaryCard = memo(withStyles({
       <div class={classes.wrapper}>
         <h5
           class={`title ${isPrivate ? classes.privateHeader : classes.publicHeader}`}
-          title={name}>
+          title={name}
+        >
           {name}
         </h5>
         {
           ctftimeId &&
-              <a href={`https://ctftime.org/team/${ctftimeId}`} target='_blank' rel='noopener noreferrer'>
-                <Ctftime style='height: 20px;' />
-              </a>
+            <a href={`https://ctftime.org/team/${ctftimeId}`} target='_blank' rel='noopener noreferrer'>
+              <Ctftime style='height: 20px;' />
+            </a>
         }
       </div>
       <div class='action-bar'>
@@ -381,11 +382,13 @@ const Profile = ({ uuid, classes }) => {
         {isPrivate && config.userMembers && (
           <MembersCard />
         )}
-        {isPrivate ? (
-          <PrivateSolvesCard solves={solves} />
-        ) : (
-          <PublicSolvesCard solves={solves} />
-        )}
+        {isPrivate
+          ? (
+            <PrivateSolvesCard solves={solves} />
+            )
+          : (
+            <PublicSolvesCard solves={solves} />
+            )}
       </div>
     </div>
   )

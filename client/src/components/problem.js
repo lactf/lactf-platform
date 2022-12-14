@@ -91,7 +91,8 @@ const Problem = ({ classes, problem, solved, setSolved }) => {
           <div class='col-6 u-no-padding u-text-right'>
             <a
               class={`${classes.points} ${solvesPending ? classes.solvesPending : ''}`}
-              onClick={onSolvesClick}>
+              onClick={onSolvesClick}
+            >
               {problem.solves}
               {problem.solves === 1 ? ' solve / ' : ' solves / '}
               {problem.points}

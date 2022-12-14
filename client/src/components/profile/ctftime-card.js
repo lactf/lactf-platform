@@ -36,21 +36,23 @@ const CtftimeCard = withStyles({
     <div class='card'>
       <div class='content'>
         <p>CTFtime Integration</p>
-        {ctftimeId === null ? (
-          <Fragment>
-            <p class='font-thin u-no-margin'>To login with CTFtime and get a badge on your profile, connect CTFtime to your account.</p>
-            <div class='row u-center'>
-              <CtftimeButton class={classes.ctftimeButton} onCtftimeDone={handleCtftimeDone} />
-            </div>
-          </Fragment>
-        ) : (
-          <Fragment>
-            <p class='font-thin u-no-margin'>Your account is already connected to CTFtime. You can disconnect CTFtime from your account.</p>
-            <div class='row u-center'>
-              <button class='btn-info u-center' onClick={handleRemoveClick}>Remove</button>
-            </div>
-          </Fragment>
-        )}
+        {ctftimeId === null
+          ? (
+            <Fragment>
+              <p class='font-thin u-no-margin'>To login with CTFtime and get a badge on your profile, connect CTFtime to your account.</p>
+              <div class='row u-center'>
+                <CtftimeButton class={classes.ctftimeButton} onCtftimeDone={handleCtftimeDone} />
+              </div>
+            </Fragment>
+            )
+          : (
+            <Fragment>
+              <p class='font-thin u-no-margin'>Your account is already connected to CTFtime. You can disconnect CTFtime from your account.</p>
+              <div class='row u-center'>
+                <button class='btn-info u-center' onClick={handleRemoveClick}>Remove</button>
+              </div>
+            </Fragment>
+            )}
       </div>
     </div>
   )

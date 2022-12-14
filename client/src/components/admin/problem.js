@@ -295,7 +295,7 @@ const Problem = ({ classes, problem, update: updateClient }) => {
 
             <div class={`form-section ${classes.controls}`}>
               <button class='btn-small btn-info'>Update</button>
-              <button class='btn-small btn-danger' onClick={openDeleteModal} type='button' >Delete</button>
+              <button class='btn-small btn-danger' onClick={openDeleteModal} type='button'>Delete</button>
             </div>
           </form>
         </div>

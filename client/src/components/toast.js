@@ -57,15 +57,14 @@ export function ToastProvider ({ children }) {
   return (
     <ToastCtx.Provider value={add}>
       {children}
-      { toasts.length > 0 &&
+      {toasts.length > 0 &&
         <ToastContainer>
-          { toasts.map(({ id, type, body }) =>
+          {toasts.map(({ id, type, body }) =>
             <Toast type={type} key={id} id={id} remove={remove}>
               {body}
             </Toast>
           )}
-        </ToastContainer>
-      }
+        </ToastContainer>}
     </ToastCtx.Provider>
   )
 }

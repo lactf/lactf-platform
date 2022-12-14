@@ -105,7 +105,7 @@ export default withStyles({
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100%',
-    background: '#f00',
+    background: '#3a2420',
     color: '#fff',
     '& *:not(code):not(pre)': {
       fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Noto Sans", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important'

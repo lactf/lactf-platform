@@ -1,0 +1,39 @@
+steps:
+    # use old image version as cache
+    - name: "gcr.io/cloud-builders/docker"
+      entrypoint: "bash"
+      args:
+          [
+              "-c",
+              "docker pull us-west1-docker.pkg.dev/$PROJECT_ID/lactf-infra/lactf-platform:latest || exit 0",
+          ]
+    - name: "gcr.io/cloud-builders/docker"
+      args:
+          [
+              "build",
+              "--cache-from",
+              "us-west1-docker.pkg.dev/$PROJECT_ID/lactf-infra/lactf-platform:latest",
+              "-t",
+              "us-west1-docker.pkg.dev/$PROJECT_ID/lactf-infra/lactf-platform:latest",
+              ".",
+          ]
+    - name: "gcr.io/cloud-builders/docker"
+      args:
+          [
+              "push",
+              "us-west1-docker.pkg.dev/$PROJECT_ID/lactf-infra/lactf-platform:latest",
+          ]
+    - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+      entrypoint: gcloud
+      # NOTE: lactf-platform-worker does not get auto-deployed, manually redeploy if needed
+      args:
+          - "run"
+          - "deploy"
+          - "lactf-platform"
+          - "--image=us-west1-docker.pkg.dev/$PROJECT_ID/lactf-infra/lactf-platform:latest"
+          - "--region=us-west1"
+          - "--set-secrets=/app/conf.d/private/01-private.yaml=rctf-config:latest"
+          - "--tag=staging"
+
+images:
+    - "us-west1-docker.pkg.dev/$PROJECT_ID/lactf-infra/lactf-platform:latest"

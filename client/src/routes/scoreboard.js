@@ -229,16 +229,15 @@ const Scoreboard = withStyles({
             <div class='frame__subtitle'>Teams per page</div>
             <div class='input-control'>
               <select required class='select' name='pagesize' value={pageSize} onChange={pageSizeChangeHandler}>
-                { PAGESIZE_OPTIONS.map(sz => <option value={sz}>{sz}</option>) }
+                {PAGESIZE_OPTIONS.map(sz => <option value={sz}>{sz}</option>)}
               </select>
             </div>
-            { loggedIn &&
+            {loggedIn &&
               <div class='btn-container u-center'>
                 <button disabled={!isUserOnCurrentScoreboard} onClick={goToSelfPage}>
                   Go to my team
                 </button>
-              </div>
-            }
+              </div>}
           </div>
         </div>
       </div>
@@ -254,11 +253,12 @@ const Scoreboard = withStyles({
                 </tr>
               </thead>
               <tbody>
-                { scores.map(({ id, name, score, rank }) => {
+                {scores.map(({ id, name, score, rank }) => {
                   const isSelf = profile != null && profile.id === id
 
                   return (
-                    <tr key={id}
+                    <tr
+                      key={id}
                       class={isSelf ? classes.selected : ''}
                       ref={isSelf ? selfRow : null}
                     >
@@ -269,16 +269,15 @@ const Scoreboard = withStyles({
                       <td>{score}</td>
                     </tr>
                   )
-                }) }
+                })}
               </tbody>
             </table>
           </div>
-          { totalItems > pageSize &&
+          {totalItems > pageSize &&
             <Pagination
               {...{ totalItems, pageSize, page, setPage }}
               numVisiblePages={9}
-            />
-          }
+            />}
         </div>
       </div>
     </div>

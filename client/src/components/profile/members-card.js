@@ -99,7 +99,7 @@ const MembersCard = withStyles({
             members.length !== 0 &&
               <div class='row'>
                 {
-                  members.map(data => <MemberRow setMembers={setMembers} { ...data } />)
+                  members.map(data => <MemberRow setMembers={setMembers} {...data} />)
                 }
               </div>
           }

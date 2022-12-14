@@ -64,7 +64,7 @@ export default withStyles({
   return (
     <div class='row u-center'>
       <Form class={`${classes.root} col-6`} onSubmit={handleSubmit} disabled={disabledButton} errors={errors} buttonText='Register'>
-        { showName &&
+        {showName &&
           <input
             autofocus
             required
@@ -78,8 +78,7 @@ export default withStyles({
             type='text'
             value={name}
             onChange={handleNameChange}
-          />
-        }
+          />}
       </Form>
     </div>
   )

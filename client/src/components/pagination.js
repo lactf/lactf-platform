@@ -83,19 +83,17 @@ function Pagination ({ totalItems, pageSize, page, setPage, numVisiblePages }) {
   return (
     <div class='pagination u-center'>
       <PaginationItem disabled={page === 1} key='<' onClick={boundSetPages[page - 1 - 1]}>&lt;</PaginationItem>
-      { startPage > 1 &&
+      {startPage > 1 &&
         <Fragment>
           <PaginationItem key={1} onClick={boundSetPages[0]}>1</PaginationItem>
           <PaginationEllipses key='.<' />
-        </Fragment>
-      }
+        </Fragment>}
       {pages.map((p) => <PaginationItem selected={p === page} key={p} onClick={boundSetPages[p - 1]}>{p}</PaginationItem>)}
-      { endPage < totalPages &&
+      {endPage < totalPages &&
         <Fragment>
           <PaginationEllipses key='.>' />
           <PaginationItem key={totalPages} onClick={boundSetPages[totalPages - 1]}>{totalPages}</PaginationItem>
-        </Fragment>
-      }
+        </Fragment>}
       <PaginationItem disabled={page === totalPages} key='>' onClick={boundSetPages[page + 1 - 1]}>&gt;</PaginationItem>
     </div>
   )
