@@ -1,0 +1,35 @@
+ctfName: LACTF
+meta:
+  description: 'LACTF challenge list'
+  imageUrl: https://static.lac.tf/lactf-banner.gif
+origin: https://2023.lac.tf
+homeContent: |
+  # This is a test
+  ![LACTF Banner](https://static.lac.tf/lactf-banner.gif)
+  hello from LACTF
+
+startTime: 1670988784364
+# startTime: 1671018026000
+endTime: 1671277226000
+
+divisions:
+  ucla: UCLA
+  open: Open
+divisionACLs:
+  - match: domain
+    value: ucla.edu
+    divisions:
+      - ucla
+      - open
+  - match: domain
+    value: g.ucla.edu
+    divisions:
+      - ucla
+      - open
+  - match: any
+    value: ''
+    divisions:
+      - open
+
+sponsors: ["sponsor 1", "Google Cloud"]
+faviconUrl: https://static.lac.tf/flag.ico
