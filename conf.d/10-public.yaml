@@ -15,33 +15,30 @@ homeContent: |
 
   ## Rules
 
-  ### ELIGIBILITY
-  Anyone can participate in LA CTF. However, due to various reasons, we can only guarantee that prizes can be awarded to teams in the United States. In order for>
+  ### Eligibility
+  Anyone can participate in LA CTF. However, due to various reasons, we can only guarantee that prizes can be awarded to teams in the United States. In order for a team to be eligible for UCLA-specific prizes, all members of the team must be current UCLA undergraduate students.
 
-  ### RULES AND RESTRICTIONS
-  1. You may use any tool, subject to the restrictions below, at your disposal to attempt to solve the problems. We especially encourage the use of free and open>
-  2. During the competition, only members of a given team may assist in solving a challenge for that team. You may not seek out “new” help; you are free to use a>
-  3. Each team must have a valid email address that should serve as the point of contact. UCLA students should use a @g.ucla.edu email to register for access to >
-    - Login is facilitated using a team token. Do NOT share this token, as anyone with this token can access your team’s account!
-  4. There are two divisions for teams, UCLA and Open.
-    - Teams in the UCLA-only division may consist of up to four participants. All members must be UCLA students in order to be eligible for UCLA-division prizes,>
-    - There is no size limit for Open division teams and members can be from anywhere. UCLA students may choose to participate in this division if they wish to d>
-  5. No flag or hint sharing. Do not accept hints or guidance from anyone except through official support channels.
-  6. Do not attempt to attack or interfere with other teams or any servers used in this competition that are not explicitly designated for being hacked in a prob>
-  7. No brute-force guessing flags. Feel free to try several flags if you're not sure, but don't try any sort of brute forcing on the flags.
-  8. Finally, have fun and try and learn something new!
+  ### Rules
+  1. You may use any tool, subject to the restrictions below, at your disposal to attempt to solve the problems. We especially encourage the use of free and open-source tools. The Prime Directive of CTFs is Google Is Your Friend.
+  2. During the competition, each person may only be a part of **one team** total, and only members of a given team may assist in solving a challenge for that team. You may not seek out "new" help; you are free to use any online materials provided they existed before the competition. Programs such as ChatGPT or online support forums that generate "new" content may not be used.
+  3. Each team must have a valid email address that should serve as the point of contact. UCLA students should use a @g.ucla.edu email to register for access to the UCLA-only division.
+  4. There are two divisions for teams, **UCLA** and **Open**. Teams in the UCLA-only division may consist of up to **four** participants, all of which must be **current undergraduate UCLA students**. Open division teams have no team size or makeup restrictions. UCLA students may choose to participate in either division.
+  5. No flag or hint sharing. Do **not** accept hints or guidance from anyone except through official support channels.
+  6. Do **not** attempt to attack or interfere with other teams or any servers used in this competition that are not explicitly designated for being hacked in a problem. If you ever have a question about whether something is allowed, please ask!
+  7. No brute-force guessing flags. Feel free to try several flags if you're not sure, but don't try any sort of brute forcing on the scoreboard platform.
+  8. Finally, **have fun and try and learn something new**!
 
-  ### SCORING
-  1. Each problem has a point value listed. The team who earns the most points wins the competition. If two teams have the same number of points, the tiebreak is>
-  2. Challenges are subject to dynamic scoring: the more teams that solve a particular challenge, the less points that challenge will be worth to all teams who s>
+  ### Scoring
+  1. Each problem has a point value listed. The team who earns the most points wins the competition. If two teams have the same number of points, the tiebreak is which team reached their top score first.
+  2. Challenges are subject to **dynamic scoring**: the **more** teams that solve a particular challenge, the **less** points that challenge will be worth to **all** teams who solved the challenge. There is no time score bonus awarded.
   3. The prize winning teams will be contacted by us after the contest ends. Please make sure the email used to register the team is accurate.
   4. We reserve the right to require write-ups from the winning teams for any problems we choose as proofs of solution.
-  5. In the event that a team that is ineligible for prizes wins a prize, the next eligible, high school or middle school US team will recieve that prize.
-  6. Anyone who violates these rules will be disqualified. All decisions made by LA CTF are final.
+  5. In the event that a team that is ineligible for prizes wins a prize, the next eligible team will recieve that prize. It may take some time for prizes to settle; please be patient!
+  6. Anyone who violates these rules will be disqualified. **All decisions made by LA CTF organizers are final**.
 
-  ### PRIZES
-  1. We're proud to offer prizes to the top 10 UCLA teams and the top 10 Open division teams. UCLA teams should include all team member email addresses in the ap>
-  2. We reserve the right to require any sort of verification of problem solutions, including, but not limited to, write-ups, photo identification, and physical >
+  ### Prizes
+  We're proud to offer prizes to the top **10** UCLA teams and the top **10** Open division teams! UCLA teams must include all team member email addresses in their team profile at https://platform.lac.tf; open teams will use the email listed in the profile as the prize point of contact.  
+  We reserve the right to require any sort of verification of problem solutions, including, but not limited to, write-ups, photo identification, and physical in-person verification for UCLA students.
 
 
 startTime: 1670988784364
@@ -68,15 +65,14 @@ divisionACLs:
       - open
 
 sponsors:
-  - name: Foo
-    icon: https://static.lac.tf/lactf-banner.gif
+  - name: Sandia National Laboratories
+    icon: https://static.lac.tf/sponsors/sandia_national_laboratories.svg
     description: |
-      An excellent sponsor
-  - name: Bar
-    icon: https://static.lac.tf/lactf-banner.gif
+      Sandia National Laboratories is a multimission laboratory managed and operated by National Technology and Engineering Solutions of Sandia, LLC., a wholly owned subsidiary of Honeywell International, Inc., for the U.S. Department of Energy’s National Nuclear Security Administration under contract DE-NA-0003525.
+  - name: Google Cloud
+    icon: https://static.lac.tf/sponsors/google_cloud.svg
     description: |
-      An excellent sponsor small
-    small: true
+      Infrastructure for this CTF has been generously provided by Google Cloud. https://goo.gle/ctfsponsorship
 faviconUrl: https://static.lac.tf/flag.ico
 recaptcha:
   protectedActions:
