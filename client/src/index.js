@@ -2,6 +2,10 @@ import { useState, useCallback, useEffect } from 'preact/hooks'
 import Router, { route } from 'preact-router'
 
 import 'cirrus-ui'
+import '@fontsource/poppins/300.css'
+import '@fontsource/poppins/400.css'
+import '@fontsource/poppins/500.css'
+import '@fontsource/poppins/700.css'
 import withStyles from './components/jss'
 import Header from './components/header'
 import Footer from './components/footer'
@@ -91,7 +95,8 @@ function App ({ classes }) {
 
 export default withStyles({
   '@global body': {
-    overflowX: 'hidden'
+    overflowX: 'hidden',
+    backgroundColor: '#3a2420'
   },
   // we show the google legal notice on each protected form
   '@global .grecaptcha-badge': {
@@ -104,11 +109,14 @@ export default withStyles({
   root: {
     display: 'flex',
     flexDirection: 'column',
-    minHeight: '100%',
-    background: '#6c452a',
-    color: '#fff',
+    padding: '0',
+    margin: '0',
+    backgroundColor: '#3a2420',
+    color: 'white',
+    scrollBehavior: 'smooth',
+    scrollPaddingTop: '7rem',
     '& *:not(code):not(pre)': {
-      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Noto Sans", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important'
+      fontFamily: '"Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Noto Sans", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important'
     },
     '& pre.code': {
       padding: '10px',
@@ -125,6 +133,10 @@ export default withStyles({
       color: '#ccc',
       border: '1px solid #ffffff1a'
     }
+  },
+  '@global a': {
+    // override cirrus default
+    fontWeight: '400'
   },
   '@global select': {
     background: 'url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20viewBox=\'0%200%204%205\'%3E%3Cpath%20fill=\'%23667189\'%20d=\'M2%200L0%202h4zm0%205L0%203h4z\'/%3E%3C/svg%3E") right .85rem center/.5rem .6rem no-repeat no-repeat #111 !important'

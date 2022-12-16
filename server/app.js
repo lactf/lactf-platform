@@ -44,7 +44,8 @@ app.register(helmet, {
       scriptSrc: ['\'self\'', 'https://www.google-analytics.com', 'https://www.google.com/recaptcha/', 'https://www.gstatic.com/recaptcha/'],
       frameSrc: ['https://www.google.com/recaptcha/'],
       connectSrc: ['\'self\'', 'https://www.google-analytics.com'],
-      imgSrc: ['*', 'data:']
+      imgSrc: ['*', 'data:'],
+      fontSrc: ['\'self\'']
     }
   }
 })
