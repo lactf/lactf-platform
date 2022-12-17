@@ -19,8 +19,8 @@ homeContent: |
   Anyone can participate in LA CTF. However, due to various reasons, we can only guarantee that prizes can be awarded to teams in the United States. In order for a team to be eligible for UCLA-specific prizes, all members of the team must be current UCLA undergraduate students.
 
   ### Rules
-  1. You may use any tool, subject to the restrictions below, at your disposal to attempt to solve the problems. We especially encourage the use of free and open-source tools. The Prime Directive of CTFs is Google Is Your Friend.
-  2. During the competition, each person may only be a part of **one team** total, and only members of a given team may assist in solving a challenge for that team. You may not seek out "new" help; you are free to use any online materials provided they existed before the competition. Programs such as ChatGPT or online support forums that generate "new" content may not be used.
+  1. You may use any tool, subject to the restrictions below, at your disposal to attempt to solve the problems. We especially encourage the use of free and open-source tools. Google is your best friend!
+  2. During the competition, each person may only be a part of **one team** total, and only members of a given team may assist in solving a challenge for that team. You may not seek out "new" help; you are free to use any online or external resources provided they existed before the competition start time. Programs such as ChatGPT or online support forums that generate "new" content may not be used.
   3. Each team must have a valid email address that should serve as the point of contact. UCLA students should use a @g.ucla.edu email to register for access to the UCLA-only division.
   4. There are two divisions for teams, **UCLA** and **Open**. Teams in the UCLA-only division may consist of up to **four** participants, all of which must be **current undergraduate UCLA students**. Open division teams have no team size or makeup restrictions. UCLA students may choose to participate in either division.
   5. No flag or hint sharing. Do **not** accept hints or guidance from anyone except through official support channels.
@@ -37,8 +37,8 @@ homeContent: |
   6. Anyone who violates these rules will be disqualified. **All decisions made by LA CTF organizers are final**.
 
   ### Prizes
-  We're proud to offer prizes to the top **10** UCLA teams and the top **10** Open division teams! UCLA teams must include all team member email addresses in their team profile at https://platform.lac.tf; open teams will use the email listed in the profile as the prize point of contact.  
-  We reserve the right to require any sort of verification of problem solutions, including, but not limited to, write-ups, photo identification, and physical in-person verification for UCLA students.
+  We're proud to offer prizes to the top **10** UCLA teams and the top **10** Open division teams! UCLA teams **must** include all team member email addresses in their team profile at https://platform.lac.tf; open teams will use the email listed in the profile as the prize point of contact.  
+  We reserve the right to require verification of prize eligibility, including, but not limited to, write-ups.  
 
 
 startTime: 1670988784364
