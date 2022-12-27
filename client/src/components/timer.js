@@ -14,17 +14,12 @@ const Timer = withStyles({
   content: {
     display: 'grid',
     gridTemplateColumns: 'repeat(4, 1fr)',
-    columnGap: '20px',
     margin: '20px 40px',
     textAlign: 'center'
   },
-  time: {
-    fontSize: '40px'
-  },
   absolute: {
     gridColumn: 'span 4',
-    fontSize: '15px',
-    color: '#bbb'
+    fontSize: '15px'
   },
   sub: {
     gridColumn: 'span 4',
@@ -55,7 +50,9 @@ const Timer = withStyles({
   }
   const targetEnd = time > config.startTime
   const targetTime = targetEnd ? config.endTime : config.startTime
+  const totalTime = Math.abs(config.endTime - config.startTime)
   const timeLeft = targetTime - time
+  const totalDays = Math.floor(totalTime / (1000 * 60 * 60 * 24))
   const daysLeft = Math.floor(timeLeft / (1000 * 60 * 60 * 24))
   const hoursLeft = Math.floor(timeLeft / (1000 * 60 * 60)) % 24
   const minutesLeft = Math.floor(timeLeft / (1000 * 60)) % 60
@@ -64,19 +61,76 @@ const Timer = withStyles({
     <div class='row'>
       <div class={`card ${classes.card}`}>
         <div class={classes.content}>
-          <span class={classes.time}>{daysLeft}</span>
-          <span class={classes.time}>{hoursLeft}</span>
-          <span class={classes.time}>{minutesLeft}</span>
-          <span class={classes.time}>{secondsLeft}</span>
-          <span>Days</span>
-          <span>Hours</span>
-          <span>Minutes</span>
-          <span>Seconds</span>
+          <CountdownRing time={daysLeft} label='days' max={totalDays} />
+          <CountdownRing time={hoursLeft} label='hours' max={24} />
+          <CountdownRing time={minutesLeft} label='minutes' max={60} />
+          <CountdownRing time={secondsLeft} label='seconds' max={60} />
           <span class={classes.sub}>until {config.ctfName} {targetEnd ? 'ends' : 'starts'}</span>
           <span class={classes.absolute}>{formatAbsoluteTimeWithTz(targetTime)}</span>
         </div>
       </div>
     </div>
+  )
+})
+
+const CountdownRing = withStyles({
+  countdownArc: {
+    width: '100%',
+    maxWidth: '220px',
+    overflow: 'visible',
+    fill: 'none',
+    strokeWidth: '2.5',
+    strokeLinecap: 'round',
+    '& path': {
+      stroke: 'white'
+    },
+    '& circle': {
+      stroke: 'rgba(255, 255, 255, 20%)'
+    },
+    '& text': {
+      dominantBaseline: 'middle',
+      textAnchor: 'middle',
+      fill: 'white',
+      '&:first-of-type': {
+        transform: 'translateY(-0.17em)',
+        fontSize: 'x-large'
+      },
+      '&:last-of-type': {
+        transform: 'translateY(1.41em)',
+        fontSize: 'xx-small',
+        fontWeight: '300'
+      }
+    }
+  },
+  '@media (max-width: 768px)': {
+    countdownArc: {
+      strokeWidth: '4'
+    }
+  }
+}, ({ classes, time, label, max }) => {
+  const radius = 50 / Math.sqrt(2)
+  const offset = 50 - radius
+  const angle = (time / max) * 2 * Math.PI
+  const large = angle > Math.PI ? 1 : 0
+  const sweep = angle > 0 ? 1 : 0
+  const startX = offset + radius
+  const startY = offset
+  const endX = offset + radius * (Math.cos(angle - Math.PI / 2) + 1)
+  const endY = offset + radius * (Math.sin(angle - Math.PI / 2) + 1)
+  return (
+    <svg viewBox='0,0,100,100' className={classes.countdownArc}>
+      <circle cx='50' cy='50' r={radius.toString()} />
+      <path
+        d={`M ${startX} ${startY} A ${radius} ${radius} 0 ${large} ${sweep} ${endX} ${endY}`}
+        visibility={angle === 0 ? 'hidden' : 'visible'}
+      />
+      <text x='50%' y='50%'>
+        {Math.floor(time).toString().padStart(2, '0')}
+      </text>
+      <text x='50%' y='50%'>
+        {label}
+      </text>
+    </svg>
   )
 })
 

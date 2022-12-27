@@ -14,11 +14,16 @@ const DeleteModal = withStyles({
   controls: {
     display: 'flex',
     justifyContent: 'center',
+    paddingTop: '2rem',
     '& :first-child': {
       marginLeft: '0em'
     },
     '& :last-child': {
       marginRight: '0em'
+    },
+    '& button': {
+      // this button doesn't style without this ??? - arc is going insane
+      fontFamily: 'Poppins'
     }
   }
 }, ({ open, onClose, onDelete, classes }) => {
@@ -312,7 +317,7 @@ export default withStyles({
     background: 'var(--bg-dark)',
     '& input, & textarea': {
       color: '#fff !important',
-      background: '#111'
+      background: 'var(--bg-darker)'
     }
   },
   downloadsHeader: {
@@ -325,7 +330,7 @@ export default withStyles({
     }
   },
   tag: {
-    background: '#111'
+    background: 'var(--bg-darker)'
   },
   divider: {
     margin: '0.625em !important',

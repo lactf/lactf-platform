@@ -11,6 +11,18 @@ const MemberRow = withStyles({
     width: '100%',
     display: 'flex',
     justifyContent: 'space-between'
+  },
+  chucklesImInDanger: {
+    '& > input': {
+      // since this is an input and not a button it gets !important'd colored
+      // so we have to fix it with Specificity Rules (tm)
+      color: 'var(--cirrus-danger) !important',
+      '&:hover': {
+        color: 'var(--cirrus-light) !important'
+      }
+      // it took 6 tries to style this button right
+      // css is making me go insane - Arc
+    }
   }
 }, ({ classes, id, email, setMembers }) => {
   const { toast } = useToast()
@@ -27,7 +39,7 @@ const MemberRow = withStyles({
   return (
     <div class={classes.root} key={id}>
       <p class='u-no-margin'>{email}</p>
-      <div class='btn-container u-vertical-center'>
+      <div class={`btn-container u-vertical-center ${classes.chucklesImInDanger}`}>
         <input onClick={handleDelete} type='submit' class='btn-small btn-danger u-no-margin' value='Delete' />
       </div>
     </div>

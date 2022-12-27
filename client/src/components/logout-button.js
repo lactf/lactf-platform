@@ -6,7 +6,10 @@ import withStyles from './jss'
 
 const LogoutDialog = withStyles({
   button: {
-    fontFamily: 'inherit'
+    fontFamily: 'inherit',
+    '&:hover': {
+      borderColor: 'var(--cirrus-danger)'
+    }
   }
 }, ({ onClose, classes, ...props }) => {
   const wrappedOnClose = useCallback(e => {

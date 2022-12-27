@@ -26,7 +26,7 @@ const Scoreboard = withStyles({
       color: '#fff'
     },
     '& button, & select, & option': {
-      background: '#111',
+      background: 'var(--bg-darker)',
       color: '#fff'
     }
   },
@@ -44,6 +44,18 @@ const Scoreboard = withStyles({
     '& tbody td': {
       overflow: 'hidden',
       whiteSpace: 'nowrap'
+    },
+    '& a': {
+      color: 'white',
+      '&:hover': {
+        textDecoration: 'underline'
+      }
+    }
+  },
+  goto: {
+    marginTop: '2rem',
+    '&:hover': {
+      color: 'var(--btn-fg)'
     }
   }
 }, ({ classes }) => {
@@ -234,7 +246,7 @@ const Scoreboard = withStyles({
             </div>
             {loggedIn &&
               <div class='btn-container u-center'>
-                <button disabled={!isUserOnCurrentScoreboard} onClick={goToSelfPage}>
+                <button class={`btn- ${classes.goto}`} disabled={!isUserOnCurrentScoreboard} onClick={goToSelfPage}>
                   Go to my team
                 </button>
               </div>}

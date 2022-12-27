@@ -7,7 +7,8 @@ export default withStyles({
     userSelect: 'all',
     fontFamily: 'monospace !important',
     cursor: 'pointer',
-    background: '#111'
+    background: 'var(--bg-darker)',
+    borderColor: 'var(--cirrus-primary)'
   }
 }, ({ classes, token, ...props }) => {
   return (

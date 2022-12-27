@@ -49,7 +49,7 @@ export default withStyles({
   },
 
   navbar: {
-    position: 'sticky',
+    position: 'fixed',
     display: 'flex',
     width: '100%',
     top: '0',
@@ -131,7 +131,7 @@ export default withStyles({
     display: 'none'
   },
 
-  '@media (max-width: 840px)': {
+  '@media (max-width: 768px)': {
     navbar: {
       display: 'flex',
       flexDirection: 'row',

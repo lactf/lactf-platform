@@ -63,6 +63,7 @@ export default withStyles({
   },
   modal: {
     background: 'var(--bg-dark)',
+    fontFamily: 'Poppins',
     color: '#fff',
     maxWidth: 'initial'
   },
