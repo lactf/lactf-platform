@@ -6,13 +6,13 @@ origin: https://platform.lac.tf
 homeContent: |
   <!--[lactf div class="lactf-hero"]-->
 
-  ![LACTF Banner](https://static.lac.tf/lactf-banner.gif)
+  ![LACTF Banner](https://static.lac.tf/images/LongLogoWavingTransparentBig.gif)
 
   <timer></timer>
 
   <!--[lactf /div]-->
 
-  <!--[lactf div class="lactf-sponsors"]-->
+  <!--[lactf div class="lactf-sponsors card"]-->
 
   ## Sponsors
   LA CTF would not be possible without all of these amazing sponsors!
@@ -21,7 +21,7 @@ homeContent: |
 
   <!--[lactf /div]-->
 
-  <!--[lactf div class="lactf-rules"]-->
+  <!--[lactf div class="lactf-rules card"]-->
 
   ## Rules
 
@@ -83,5 +83,5 @@ sponsors:
   - name: Google Cloud
     icon: https://static.lac.tf/sponsors/google_cloud.png
     description: |
-      Infrastructure for this CTF has been generously provided by Google Cloud. https://goo.gle/ctfsponsorship
+      Infrastructure for this CTF has been generously provided by Google Cloud. [https://goo.gle/ctfsponsorship](https://goo.gle/ctfsponsorship)
 faviconUrl: https://static.lac.tf/flag.ico
