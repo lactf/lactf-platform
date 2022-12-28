@@ -56,6 +56,7 @@ export type ServerConfig = {
   homeContent: string;
   ctfName: string;
   meta: {
+    title?: string;
     description: string;
     imageUrl: string;
   }
@@ -155,6 +156,7 @@ const envConfig: PartialDeep<ServerConfig> = {
   homeContent: process.env.RCTF_HOME_CONTENT,
   ctfName: process.env.RCTF_NAME,
   meta: {
+    title: process.env.RCTF_META_TITLE,
     description: process.env.RCTF_META_DESCRIPTION,
     imageUrl: process.env.RCTF_IMAGE_URL
   },
