@@ -192,17 +192,23 @@ export default withStyles({
     cursor: 'default'
   },
   tag: {
-    background: '#111'
+    background: 'var(--bg-darker)'
   },
   input: {
-    background: '#111',
+    background: 'var(--bg-darker)',
     color: '#fff !important'
   },
   submit: {
-    background: '#111',
+    background: 'var(--bg-darker)',
     color: '#fff',
     '&:hover': {
-      background: 'var(--bg-dark)'
-    }
+      background: '#111',
+      borderColor: 'var(--cirrus-primary)'
+    },
+    // unset the custom lactf button styling used elsewhere
+    border: '1px solid var(--btn-border-color)',
+    borderRadius: '0rem 0.25rem 0.25rem 0rem !important',
+    fontSize: '70%',
+    fontWeight: '400'
   }
 }, Problem)

@@ -4,14 +4,24 @@ meta:
   imageUrl: https://static.lac.tf/lactf-banner.gif
 origin: https://platform.lac.tf
 homeContent: |
-  ![LACTF Banner](https://static.lac.tf/lactf-banner.gif)
+  <!--[lactf div class="lactf-hero"]-->
+
+  ![LACTF Banner](https://static.lac.tf/images/LongLogoWavingTransparentBig.gif)
 
   <timer></timer>
+
+  <!--[lactf /div]-->
+
+  <!--[lactf div class="lactf-sponsors card"]-->
 
   ## Sponsors
   LA CTF would not be possible without all of these amazing sponsors!
 
   <sponsors></sponsors>
+
+  <!--[lactf /div]-->
+
+  <!--[lactf div class="lactf-rules card"]-->
 
   ## Rules
 
@@ -40,6 +50,7 @@ homeContent: |
   We're proud to offer prizes to the top **10** UCLA teams and the top **10** Open division teams! UCLA teams **must** include all team member email addresses in their team profile at https://platform.lac.tf; open teams will use the email listed in the profile as the prize point of contact.  
   We reserve the right to require verification of prize eligibility, including, but not limited to, write-ups.  
 
+  <!--[lactf /div]-->
 
 startTime: 1670988784364
 # startTime: 1671018026000
@@ -72,10 +83,5 @@ sponsors:
   - name: Google Cloud
     icon: https://static.lac.tf/sponsors/google_cloud.png
     description: |
-      Infrastructure for this CTF has been generously provided by Google Cloud. https://goo.gle/ctfsponsorship
+      Infrastructure for this CTF has been generously provided by Google Cloud. [https://goo.gle/ctfsponsorship](https://goo.gle/ctfsponsorship)
 faviconUrl: https://static.lac.tf/flag.ico
-recaptcha:
-  protectedActions:
-    - register
-    - recover
-    - setEmail

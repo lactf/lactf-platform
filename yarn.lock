@@ -918,6 +918,11 @@
   dependencies:
     arrify "^1.0.1"
 
+"@fontsource/poppins@4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@fontsource/poppins/-/poppins-4.5.10.tgz#44dbfeacb5d89efca5ad7ad6cc941b2ac1ee424b"
+  integrity sha512-oYZVHsnlwV3VWM1SE/m6SUxVh0QLk5+2wB+lBiXcI7N/0KVQWmV9YykaPqfJHBLvmdya+MAOnv+BQHeLU1vOOw==
+
 "@google-cloud/common@^3.3.0":
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/@google-cloud/common/-/common-3.4.0.tgz#8951d0dc94c9dfd8af2b49ed125984dc71f1de6b"

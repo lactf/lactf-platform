@@ -406,7 +406,7 @@ export default withStyles({
       marginBottom: '20px'
     },
     '& input, & select, & option': {
-      background: '#111',
+      background: 'var(--bg-darker)',
       color: '#fff !important'
     }
   },
