@@ -10,18 +10,20 @@
 		<link rel="shortcut icon" href="{{ config.faviconUrl }}">
         {{ #config.meta.title }}
             <meta name="title" content="{{ config.meta.title }}">
+            <meta property="og:title" content="{{ config.meta.title }}">
+            <meta name="twitter:title" content="{{ config.meta.title }}">
         {{ /config.meta.title }}
         {{ ^config.meta.title}}
             <meta name="title" content="{{ config.ctfName }}">
+            <meta property="og:title" content="{{ config.ctfName }}">
+            <meta name="twitter:title" content="{{ config.ctfName }}">
         {{ /config.meta.title }}
 		<meta name="description" content="{{ config.meta.description }}">
 		<meta property="og:type" content="website">
-		<meta property="og:title" content="{{ config.ctfName }}">
 		<meta property="og:image" content="{{ config.meta.imageUrl }}">
 		<meta property="og:description" content="{{ config.meta.description }}">
 		<meta property="og:url" content="{{ config.origin }}">
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:title" content="{{ config.ctfName }}">
 		<meta name="twitter:description" content="{{ config.meta.description }}">
 		<meta name="twitter:image" content="{{ config.meta.imageUrl }}">
 		<meta name="twitter:url" content="{{ config.origin }}">
