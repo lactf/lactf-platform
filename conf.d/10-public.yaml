@@ -1,6 +1,7 @@
-ctfName: LACTF
+ctfName: LA CTF
 meta:
-  description: 'LACTF challenge list'
+  title: 'Platform | LA CTF'
+  description: 'LA CTF is a jeopardy-style capture-the-flag (CTF) cybersecurity competition hosted by ACM Cyber at UCLA & Psi Beta Rho!'
   imageUrl: https://static.lac.tf/lactf-banner.gif
 origin: https://platform.lac.tf
 homeContent: |
