@@ -11,7 +11,8 @@ export default withStyles({
     borderRadius: '10px',
     '& img': {
       height: '6.250em',
-      width: 'auto'
+      width: 'auto',
+      objectFit: 'contain'
     }
   },
   description: {
