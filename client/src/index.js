@@ -95,6 +95,7 @@ function App ({ classes }) {
 
 export default withStyles({
   '@global body': {
+    height: 'calc(100% - 5.5rem)', // adjusted for footer
     overflowX: 'hidden',
     background: `bottom/var(--mountain-mode) no-repeat
       url("https://static.lac.tf/images/mountains.svg"),

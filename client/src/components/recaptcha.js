@@ -58,7 +58,13 @@ export const RecaptchaLegalNotice = withStyles({
   },
   link: {
     display: 'inline',
-    padding: '0'
+    color: 'white',
+    textDecoration: 'underline',
+    padding: '0',
+    '&:hover': {
+      color: 'white',
+      textDecoration: 'underline'
+    }
   }
 }, ({ classes }) => (
   <div class={classes.root}>
