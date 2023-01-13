@@ -9,6 +9,7 @@ export type ClientConfig = Pick<ServerConfig,
   'divisions' |
   'defaultDivision' |
   'origin' |
+  'lactfPostTime' |
   'startTime' |
   'endTime' |
   'userMembers' |
@@ -28,6 +29,7 @@ const config: ClientConfig = {
   divisions: server.divisions,
   defaultDivision: server.defaultDivision,
   origin: server.origin,
+  lactfPostTime: server.lactfPostTime,
   startTime: server.startTime,
   endTime: server.endTime,
   emailEnabled: server.email != null,

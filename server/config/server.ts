@@ -76,6 +76,8 @@ export type ServerConfig = {
   defaultDivision?: string;
   divisionACLs?: ACL[];
 
+  // LA CTF: give an arbitrary starting date for the days countdown
+  lactfPostTime: number;
   startTime: number;
   endTime: number;
 
@@ -166,6 +168,7 @@ const envConfig: PartialDeep<ServerConfig> = {
   email: {
     from: process.env.RCTF_EMAIL_FROM
   },
+  lactfPostTime: nullsafeParseInt(process.env.RCTF_LACTF_POST_TIME),
   startTime: nullsafeParseInt(process.env.RCTF_START_TIME),
   endTime: nullsafeParseInt(process.env.RCTF_END_TIME),
   recaptcha: {
