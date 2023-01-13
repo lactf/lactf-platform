@@ -52,11 +52,11 @@ const Timer = withStyles({
   const targetTime = targetEnd ? config.endTime : config.startTime
   const totalTime = Math.abs(config.endTime - config.startTime)
   const timeLeft = targetTime - time
-  const totalDays = Math.floor(totalTime / (1000 * 60 * 60 * 24))
-  const daysLeft = Math.floor(timeLeft / (1000 * 60 * 60 * 24))
-  const hoursLeft = Math.floor(timeLeft / (1000 * 60 * 60)) % 24
-  const minutesLeft = Math.floor(timeLeft / (1000 * 60)) % 60
-  const secondsLeft = Math.floor(timeLeft / 1000) % 60
+  const totalDays = (totalTime / (1000 * 60 * 60 * 24))
+  const daysLeft = (timeLeft / (1000 * 60 * 60 * 24))
+  const hoursLeft = (timeLeft / (1000 * 60 * 60)) % 24
+  const minutesLeft = (timeLeft / (1000 * 60)) % 60
+  const secondsLeft = (timeLeft / 1000) % 60
   return (
     <div class='row'>
       <div class={`card ${classes.card}`}>
@@ -122,7 +122,7 @@ const CountdownRing = withStyles({
       <circle cx='50' cy='50' r={radius.toString()} />
       <path
         d={`M ${startX} ${startY} A ${radius} ${radius} 0 ${large} ${sweep} ${endX} ${endY}`}
-        visibility={angle === 0 ? 'hidden' : 'visible'}
+        visibility={angle <= 0 ? 'hidden' : 'visible'}
       />
       <text x='50%' y='50%'>
         {Math.floor(time).toString().padStart(2, '0')}
