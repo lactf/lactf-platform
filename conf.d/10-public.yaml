@@ -64,7 +64,7 @@ sponsors:
     description: "[**UCLA Affiliate**](https://www.cs.ucla.edu/affiliate-memberships/) <br /> [https://www.sandia.gov/](https://www.sandia.gov/)"
   - name: Google Cloud
     icon: https://static.lac.tf/sponsors/google_cloud.png
-    description: "Meet your business challenges head on with cloud computing services from Google, including data management, hybrid & multi-cloud, and AI & ML. Infra sponsored by goo.gle/ctfsponsorship [https://goo.gle/ctfsponsorship](https://goo.gle/ctfsponsorship)"
+    description: "Meet your business challenges head on with cloud computing services from Google, including data management, hybrid & multi-cloud, and AI & ML. Infra sponsored by [https://goo.gle/ctfsponsorship](https://goo.gle/ctfsponsorship)"
   - name: Trail of Bits
     icon: https://static.lac.tf/sponsors/trail-of-bits.png
     description: "Trail of Bits helps secure the world's most targeted organizations and products. We combine high-end security research with a real-world attacker mentality to reduce risk and fortify code. [https://www.trailofbits.com/](https://www.trailofbits.com/)"
