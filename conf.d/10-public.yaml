@@ -41,9 +41,25 @@ homeContent: |
   We reserve the right to require verification of prize eligibility, including, but not limited to, write-ups.  
 
   ## Support
-  If at any point you need to contact us during the competition, please join us in discord at [https://lactf.uclaacm.com/discord](https://lactf.uclaacm.com/discord) and use the #support channel for quick support.
+  If at any point you need to contact us during the competition, please join us in discord at [https://lactf.uclaacm.com/discord](https://lactf.uclaacm.com/discord) and use the #support channel for quick, private support.
   For private questions before the competition starts, please email [uclacyber+lactf@gmail.com](mailto:uclacyber+lactf@gmail.com).
-
+  
+  ## FAQ:
+  **How does registration work? There was a google form and now this?**
+  - As LA CTF is both an in-person and online event, there is a google form registration for LA CTF the event, and there is a team registration on this website for the online CTF competition. If you plan to participate in-person or online, please fill out the google form found under "register" at [https://lactf.uclaacm.com/](https://lactf.uclaacm.com/), but to participate in the CTF, you **MUST** have your team register once on this website.
+  **I registered for a team, but I never got a confirmation email!**
+  - Please be patient; it may take up to 15 minutes for the email to arrive. Especially if you use outlook/microsoft 365, make sure to check your junk folders! If you still haven't received a confirmation email, please contact us using one of the methods listed above.
+  **I misspelled my team name when registering/used the wrong email when verifying**
+  - You can change your team name and/or the email linked to your team account once your email is verified.
+  **I misspelled my email when submitting the register form!**
+  - Just resubmit the team registration form; you can even use the same team name. Your team name is not reserved until your email has been verified.
+  **How do I login? I never noticed any sort of password or something to register**
+  - Great question! Once you are logged in, make sure you save the "Team Invite" URL and send it to your team - anyone with the link can simply login to the team account.
+  **I'm trying to register but the captcha is not letting me register! I've tried ${some large number greater than 3} times!**
+  - If you have other people in your team, see if they can register on the website for you. If you still have trouble, contact us using one of the methods above and we can help. Captchas are only used when taking actions that result in sending an email.
+  **I have another question regarding a challenge/our ctf team account/the rules/something else**
+  - Join our discord at the link above and use the #support channel to create a ticket
+  
   <br/>
 
 
