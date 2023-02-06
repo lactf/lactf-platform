@@ -92,7 +92,7 @@ const MembersCard = withStyles({
     <div class='card'>
       <div class='content'>
         <p>Team Information</p>
-        <p class='font-thin u-no-margin'>UCLA Teams only: please enter in the @g.ucla.edu emails for all members of your team. Open division teams: please ignore.</p>
+        <p class='font-thin u-no-margin'>UCLA Teams only: please enter in the @g.ucla.edu emails for all members of your team. Open division teams: please ignore this field entirely.</p>
         <div class='row u-center'>
           <Form class={`col-12 ${classes.form}`} onSubmit={handleSubmit} disabled={buttonDisabled} buttonText='Add Member'>
             <input
