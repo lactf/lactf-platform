@@ -84,7 +84,10 @@ export default {
 
     try {
       await db.solves.newSolve({ id: uuidv4(), challengeid: challengeid, userid: uuid, createdat: new Date() })
-      return responses.goodFlag
+      // LA CTF: track bloods
+      let rank = (await db.solves.getBloodByUserIdAndChallId({ userid: uuid, challengeid }))?.rank ?? -1
+      return [responses.goodFlag, { rank }]
+      // --------------------
     } catch (e) {
       if (e.constraint === 'uq') {
         // not a unique submission, so the user already solved

@@ -166,7 +166,11 @@ export default withStyles({
       #7e5a24 48.4375%,
       #f4b42c 82.8125%,
       #ffd99f 100%
-    )`
+    )`,
+    '--blood-gold': `linear-gradient(120deg, #daa42e 0%, #d77774 100%)`,
+    '--blood-silver': `linear-gradient(120deg, #6facc3 0%, #80728f 100%)`,
+    '--blood-bronze': `linear-gradient(120deg, #ac593a 0%, #5d4e4f 100%)`,
+    '--blood-gold-shadow': `#daa42e`,
   },
   '@media (min-aspect-ratio: 1440/514)': {
     '@global :root': {
