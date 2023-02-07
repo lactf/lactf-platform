@@ -12,15 +12,16 @@ export const getGenericUserData = async ({ id }) => {
 
 export const getUserData = async ({ user }) => {
   let [
-    { userSolves, challengeInfo },
+    { userSolves, userBloods, challengeInfo },
     score
   ] = await Promise.all([
     (async () => {
       const userSolves = await db.solves.getSolvesByUserId({ userid: user.id })
+      const userBloods = await db.solves.getBloodsByUserId({ userid: user.id })
       const challengeInfo = await getChallengeInfo({
         ids: userSolves.map((solve) => solve.challengeid)
       })
-      return { userSolves, challengeInfo }
+      return { userSolves, userBloods, challengeInfo }
     })(),
     cache.leaderboard.getScore({ id: user.id })
   ])
@@ -51,6 +52,22 @@ export const getUserData = async ({ user }) => {
     })
   })
 
+  // LA CTF: track bloods
+  const bloods = []
+
+  userBloods.forEach((solve, i) => {
+    const chall = challenges.getCleanedChallenge(solve.challengeid)
+
+    // Ignore challenges with invalid id, potentially deleted challs
+    if (chall === undefined) return
+
+    bloods.push({
+      id: chall.id,
+      rank: solve.rank
+    })
+  })
+  // --------------------
+
   return {
     name: user.name,
     ctftimeId: user.ctftime_id,
@@ -58,6 +75,7 @@ export const getUserData = async ({ user }) => {
     score: score.score,
     globalPlace: score.globalPlace,
     divisionPlace: score.divisionPlace,
-    solves
+    solves,
+    bloods
   }
 }

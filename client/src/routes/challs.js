@@ -20,6 +20,9 @@ const Challenges = ({ classes }) => {
   const [categories, setCategories] = useState(challPageState.categories || {})
   const [showSolved, setShowSolved] = useState(challPageState.showSolved || false)
   const [solveIDs, setSolveIDs] = useState([])
+  // LA CTF: track bloods
+  const [bloods, setBloods] = useState(new Map())
+  // --------------------
   const [loadState, setLoadState] = useState(loadStates.pending)
   const { toast } = useToast()
 
@@ -31,6 +34,17 @@ const Challenges = ({ classes }) => {
       return solveIDs
     })
   }, [])
+
+  // LA CTF: track bloods
+  const setBlood = useCallback((id, rank) => {
+    setBloods(bloods => {
+      if (!bloods.has(id)) {
+        bloods.set(id, rank)
+      }
+      return bloods
+    })
+  }, [])
+  // --------------------
 
   const handleShowSolvedChange = useCallback(e => {
     setShowSolved(e.target.checked)
@@ -78,13 +92,14 @@ const Challenges = ({ classes }) => {
 
   useEffect(() => {
     const action = async () => {
-      const { data, error } = await getPrivateSolves()
+      const { solves, bloods, error } = await getPrivateSolves()
       if (error) {
         toast({ body: error, type: 'error' })
         return
       }
 
-      setSolveIDs(data.map(solve => solve.id))
+      setSolveIDs(solves.map(solve => solve.id))
+      setBloods(new Map(bloods.map(x => [x.id, x.rank])))
     }
     action()
   }, [toast])
@@ -203,6 +218,10 @@ const Challenges = ({ classes }) => {
                 problem={problem}
                 solved={solveIDs.includes(problem.id)}
                 setSolved={setSolved}
+                // LA CTF: track bloods
+                blood={bloods.get(problem.id) || null}
+                setBlood={setBlood}
+                // --------------------
               />
             )
           })

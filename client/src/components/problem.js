@@ -14,7 +14,18 @@ const markdownComponents = {
 
 const solvesPageSize = 10
 
-const Problem = ({ classes, problem, solved, setSolved }) => {
+// LA CTF: track bloods
+function blood2Medal(blood) {
+  switch (blood) {
+    case '1': return '🥇';
+    case '2': return '🥈';
+    case '3': return '🥉';
+    default:  return null;
+  }
+}
+// --------------------
+
+const Problem = ({ classes, problem, solved, setSolved, blood, setBlood }) => {
   const { toast } = useToast()
 
   const hasDownloads = problem.files.length !== 0
@@ -29,17 +40,20 @@ const Problem = ({ classes, problem, solved, setSolved }) => {
     e.preventDefault()
 
     submitFlag(problem.id, value.trim())
-      .then(({ error }) => {
+      .then(({ data, error }) => {
         if (error === undefined) {
           toast({ body: 'Flag successfully submitted!' })
 
           setSolved(problem.id)
+          if (data.rank >= 1 && data.rank <= 3) {
+            setBlood(problem.id, data.rank)
+          }
         } else {
           toast({ body: error, type: 'error' })
           setError(error)
         }
       })
-  }, [toast, setSolved, problem, value])
+  }, [toast, setSolved, setBlood, problem, value])
 
   const [solves, setSolves] = useState(null)
   const [solvesPending, setSolvesPending] = useState(false)
@@ -81,7 +95,7 @@ const Problem = ({ classes, problem, solved, setSolved }) => {
   const onSolvesClose = useCallback(() => setSolves(null), [])
 
   return (
-    <div class={`frame ${classes.frame}`}>
+    <div class={`frame ${classes.frame} ${blood != null ? classes['blood' + blood] : ''}`}>
       <div class='frame__body'>
         <div class='row u-no-padding'>
           <div class='col-6 u-no-padding'>
@@ -93,6 +107,7 @@ const Problem = ({ classes, problem, solved, setSolved }) => {
               class={`${classes.points} ${solvesPending ? classes.solvesPending : ''}`}
               onClick={onSolvesClick}
             >
+              {blood != null ? blood2Medal(blood) + ' / ' : ''}
               {problem.solves}
               {problem.solves === 1 ? ' solve / ' : ' solves / '}
               {problem.points}
@@ -159,8 +174,23 @@ export default withStyles({
   frame: {
     marginBottom: '1em',
     paddingBottom: '0.625em',
-    background: 'var(--bg-dark)'
+    background: 'var(--bg-dark)',
+    '& a': {
+      color: 'white'
+    }
   },
+  // LA CTF: track bloods
+  blood1: {
+    background: 'var(--blood-gold)',
+    filter: 'drop-shadow(0px 0px 8px var(--blood-gold-shadow))'
+  },
+  blood2: {
+    background: 'var(--blood-silver)'
+  },
+  blood3: {
+    background: 'var(--blood-bronze)'
+  },
+  // --------------------
   description: {
     '& a': {
       display: 'inline',
