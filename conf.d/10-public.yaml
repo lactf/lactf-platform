@@ -38,7 +38,28 @@ homeContent: |
 
   ## Prizes
   In order to be eligible for prizes, UCLA teams **must** include all team member email addresses in their team profile at [https://platform.lac.tf](https://platform.lac.tf); open teams will use the email listed in the profile as the prize point of contact.  
-  We reserve the right to require verification of prize eligibility, including, but not limited to, write-ups.  
+  We reserve the right to require verification of prize eligibility, including, but not limited to, write-ups. Prizes will be given in the form of US Amazon gift cards or by arrangement.  
+  <br/>
+  **UCLA Division**:  
+  - 1st place: $200 + 4 CrowdStrike backpacks + Amber PRO Smart Storage Device + Amber X Smart Storage Device
+  - 2nd place: $140 + 4 CrowdStrike backpacks
+  - 3rd place: $100 + 4 CrowdStrike backpacks
+  - 4th & 5th place: $80
+  - 6th-10th place: $40
+  UCLA division prizes will be distributed directly to individual team members. Amounts listed are per team.  
+  There will also be a raffle for CrowdStrike backpacks. Come in-person Saturday for more details.  
+  <br/>
+  **Open Division**:  
+  - 1st place: $500
+  - 2nd place: $300
+  - 3rd place: $200
+  - 4th & 5th place: $100
+  Open division prizes will be distributed to the email linked to the given winning teams. Amounts listed are per team.  
+  <br/>
+  **Writeup Prizes**:
+  - A number of $50 writeup prizes will be given out, and at least half will be for UCLA students only. The final number of writeup prizes will be announced when writeup submissions open.
+  - Writeup prizes are made out to the individual or group that made and submitted a winning writeup.
+  - Writeup judgement will be done by the LA CTF Organizers collectively. Decisions made by the organizers are final.  
 
   ## Support
   If at any point you need to contact us during the competition, please join us in discord at [https://lactf.uclaacm.com/discord](https://lactf.uclaacm.com/discord) and use the #support channel for quick support.
@@ -104,4 +125,3 @@ recaptcha:
     - register
     - recover
     - setEmail
-
