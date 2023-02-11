@@ -15,12 +15,12 @@ const markdownComponents = {
 const solvesPageSize = 10
 
 // LA CTF: track bloods
-function blood2Medal(blood) {
+function blood2Medal (blood) {
   switch (blood) {
-    case '1': return '🥇';
-    case '2': return '🥈';
-    case '3': return '🥉';
-    default:  return null;
+    case '1': return '🥇'
+    case '2': return '🥈'
+    case '3': return '🥉'
+    default: return null
   }
 }
 // --------------------
@@ -95,7 +95,7 @@ const Problem = ({ classes, problem, solved, setSolved, blood, setBlood }) => {
   const onSolvesClose = useCallback(() => setSolves(null), [])
 
   return (
-    <div class={`frame ${classes.frame} ${blood != null ? classes['blood' + blood] : ''}`}>
+    <div class={`frame ${classes.frame} ${blood != null ? classes[`blood${blood}`] : ''}`}>
       <div class='frame__body'>
         <div class='row u-no-padding'>
           <div class='col-6 u-no-padding'>
@@ -107,7 +107,7 @@ const Problem = ({ classes, problem, solved, setSolved, blood, setBlood }) => {
               class={`${classes.points} ${solvesPending ? classes.solvesPending : ''}`}
               onClick={onSolvesClick}
             >
-              {blood != null ? blood2Medal(blood) + ' / ' : ''}
+              {blood != null ? `${blood2Medal(blood)} / ` : ''}
               {problem.solves}
               {problem.solves === 1 ? ' solve / ' : ' solves / '}
               {problem.points}
@@ -174,10 +174,10 @@ export default withStyles({
   frame: {
     marginBottom: '1em',
     paddingBottom: '0.625em',
-    background: 'var(--bg-dark)',
-    '& a': {
+    background: 'var(--bg-dark)'
+    /* '& a': {
       color: 'white'
-    }
+    } */
   },
   // LA CTF: track bloods
   blood1: {
