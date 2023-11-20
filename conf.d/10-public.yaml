@@ -124,6 +124,7 @@ divisionACLs:
       - open
 
 faviconUrl: https://static.lac.tf/favicon.ico
+logoUrl: https://static.lac.tf/lactf-logo-square.png
 recaptcha:
   protectedActions:
     - register
