@@ -403,6 +403,7 @@ export default withStyles({
     margin: 'auto',
     '& .card': {
       background: 'var(--bg-dark)',
+      backdropFilter: 'blur(10px)',
       marginBottom: '20px'
     },
     '& input, & select, & option': {
@@ -420,6 +421,7 @@ export default withStyles({
     marginLeft: '10px'
   },
   errorCard: {
-    background: 'var(--bg-dark)'
+    background: 'var(--bg-dark)',
+    backdropFilter: 'blur(10px)'
   }
 }, Profile)

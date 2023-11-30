@@ -155,7 +155,7 @@ export default withStyles({
     '--cirrus-select-bg': '#f8747066',
     '--cirrus-code-bg': '#333',
     '--cirrus-primary': '#f44d8a',
-    '--bg-dark': 'rgba(0, 0, 0, 30%)',
+    '--bg-dark': 'rgba(0, 0, 0, 50%)',
     '--bg-darker': '#0f0f0fa0',
     '--toast-primary-bg': '#f87470e6',
     // lactf gradients

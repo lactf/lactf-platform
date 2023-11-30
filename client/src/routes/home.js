@@ -25,6 +25,7 @@ export default withStyles({
   },
   '@global .lactf-sponsors, .lactf-rules': {
     background: 'var(--bg-dark)',
+    backdropFilter: 'blur(10px)',
     padding: '0% 5%',
     borderRadius: '10px'
   }
