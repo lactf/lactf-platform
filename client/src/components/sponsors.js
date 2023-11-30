@@ -25,7 +25,8 @@ export default withStyles({
     marginBottom: '1.5em'
   },
   card: {
-    background: 'var(--bg-dark)'
+    background: 'var(--bg-dark)',
+    backdropFilter: 'blur(10px)'
   }
 }, ({ classes }) => {
   const { sponsors } = config

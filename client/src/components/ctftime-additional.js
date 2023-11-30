@@ -11,6 +11,7 @@ export default withStyles({
     padding: '1.5em',
     '& input': {
       background: 'var(--bg-dark)',
+      backdropFilter: 'blur(10px)',
       color: '#fff !important'
     }
   },

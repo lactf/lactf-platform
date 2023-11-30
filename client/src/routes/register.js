@@ -28,6 +28,7 @@ export default withStyles({
     maxWidth: '500px',
     '& input': {
       background: 'var(--bg-dark)',
+      backdropFilter: 'blur(10px)',
       color: '#fff !important'
     }
   },

@@ -11,8 +11,10 @@ export default withStyles({
     lineHeight: '0',
     padding: '10px',
     background: 'var(--bg-dark)',
+    backdropFilter: 'blur(10px)',
     '&:hover': {
-      background: 'var(--bg-dark)'
+      background: 'var(--bg-dark)',
+      backdropFilter: 'blur(10px)'
     },
     '& svg': {
       width: '150px'

@@ -239,7 +239,8 @@ export default withStyles({
   frame: {
     marginBottom: '1em',
     paddingBottom: '0.625em',
-    background: 'var(--bg-dark)'
+    background: 'var(--bg-dark)',
+    backdropFilter: 'blur(10px)'
   },
   row: {
     justifyContent: 'center',
