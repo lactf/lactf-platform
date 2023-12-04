@@ -16,6 +16,7 @@ export type Sponsor = {
   name: string;
   icon: string;
   description: string;
+  url: string;
   small?: boolean;
 }
 

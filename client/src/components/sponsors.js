@@ -25,8 +25,11 @@ export default withStyles({
     marginBottom: '1.5em'
   },
   card: {
-    background: 'var(--bg-dark)',
+    background: 'hwb(0 0% 100% / .25)',
     backdropFilter: 'blur(10px)'
+  },
+  content: {
+    paddingTop: '10px'
   }
 }, ({ classes }) => {
   const { sponsors } = config
@@ -38,9 +41,9 @@ export default withStyles({
           if (!sponsor.small) cl += ' u-flex u-flex-column h-100'
 
           return (
-            <div class={`col-6 ${classes.row}`} key={sponsor.name}>
+            <a href={sponsor.url} class={`col-6 ${classes.row}`} key={sponsor.name} style={ { color: 'white' } }>
               <div class={cl}>
-                <div class='content'>
+                <div class={`content ${classes.content}`}>
                   {sponsor.icon &&
                     <figure class={`u-center ${classes.icon}`}>
                       <img src={sponsor.icon} />
@@ -51,7 +54,7 @@ export default withStyles({
                   </small>
                 </div>
               </div>
-            </div>
+            </a>
           )
         })
       }
