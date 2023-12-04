@@ -48,7 +48,11 @@ export default class GcsProvider implements Provider {
   }
 
   private toUrl (sha256: string, name: string): string {
-    return `https://${this.bucketName}.storage.googleapis.com/uploads/${sha256}/${encodeURIComponent(name)}`
+    let domain: string = this.bucketName
+    if (!domain.includes('.')) {
+      domain += '.storage.googleapis.com'
+    }
+    return `https://${domain}/uploads/${sha256}/${encodeURIComponent(name)}`
   }
 
   async getUrl (sha256: string, name: string): Promise<string|null> {
