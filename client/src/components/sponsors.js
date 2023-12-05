@@ -22,7 +22,8 @@ export default withStyles({
     }
   },
   row: {
-    marginBottom: '1.5em'
+    marginBottom: '1.5em',
+    color: 'white !important'
   },
   card: {
     background: 'hwb(0 0% 100% / .25)',
@@ -41,7 +42,7 @@ export default withStyles({
           if (!sponsor.small) cl += ' u-flex u-flex-column h-100'
 
           return (
-            <a href={sponsor.url} class={`col-6 ${classes.row}`} key={sponsor.name} style={ { color: 'white' } }>
+            <a href={sponsor.url} class={`col-6 ${classes.row}`} key={sponsor.name}>
               <div class={cl}>
                 <div class={`content ${classes.content}`}>
                   {sponsor.icon &&
