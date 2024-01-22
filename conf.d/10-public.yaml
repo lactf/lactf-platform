@@ -14,9 +14,12 @@ homeContent: |
   <!--[lactf /div]-->
 
   <!--[lactf div class="lactf-rules card"]-->
-  
-  # Challenge Archive
-  **Challenge are now offline.** All of our challenges, including deployment configs and some author solve scripts, can be found at [https://github.com/uclaacm/lactf-archive/tree/main/2023](https://github.com/uclaacm/lactf-archive/tree/main/2023).  
+  ## In-Person Event
+  Participants are invited to join us at the Kerckhoff Grand Salon at UCLA for a concurrent in-person event.
+  More information on the schedule can be found at [schedule.lac.tf](http://schedule.lac.tf).
+
+  ## Challenge Archive
+  All of our past challenges, including deployment configs and some author solve scripts, can be found here: [https://github.com/uclaacm/lactf-archive](https://github.com/uclaacm/lactf-archive).  
 
   ## Eligibility
   Anyone can participate in LA CTF (except organizers, ACM Cyber interns and officers, and challenge authors). However, due to various reasons, we can only guarantee that prizes can be awarded to teams in the United States. In order for a team to be eligible for UCLA-specific prizes, all members of the team must be current UCLA undergraduate students.
@@ -40,30 +43,7 @@ homeContent: |
   6. Anyone who violates these rules will be disqualified. **All decisions made by LA CTF organizers are final**.
 
   ## Prizes
-  In order to be eligible for prizes, UCLA teams **must** include all team member email addresses in their team profile at [https://platform.lac.tf](https://platform.lac.tf); open teams will use the email listed in the profile as the prize point of contact.  
-  We reserve the right to require verification of prize eligibility, including, but not limited to, write-ups. Prizes will be given in the form of US Amazon gift cards or by arrangement.  
-  <br/>
-  **UCLA Division**:  
-  - 1st place: $200 + Amber PRO Smart Storage Device + Amber X Smart Storage Device
-  - 2nd place: $140
-  - 3rd place: $100
-  - 4th & 5th place: $80
-  - 6th-10th place: $40
-  UCLA division prizes will be distributed directly to individual team members. Amounts listed are per team.  
-  There will also be a raffle for CrowdStrike backpacks. Come in-person for a chance to win!  
-  <br/>
-  **Open Division**:  
-  - 1st place: $500
-  - 2nd place: $300
-  - 3rd place: $200
-  - 4th & 5th place: $100  
-  Open division prizes will be distributed to the email linked to the given winning teams. Amounts listed are per team.  
-  <br/>
-  **Writeup Prizes**:
-  - A pool of $400 worth of prize money will be given out via writeup prizes, of which $200 is for UCLA students.
-  - Writeup prizes are made out to the individual or group that made and submitted a winning writeup.
-  - Writeup judgement will be done by the LA CTF Organizers collectively. Decisions made by the organizers are final.
-  - The writeup submission form will be active for 1 week after the CTF is over, and will be posted in our discord.  
+  The prizes for the 2024 edition of LACTF are to be determined. Stay tuned!
 
   ## Support
   If at any point you need to contact us during the competition, please join us in discord at [https://lactf.uclaacm.com/discord](https://lactf.uclaacm.com/discord) and use the #support channel for quick support.
