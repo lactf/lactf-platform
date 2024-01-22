@@ -14,9 +14,11 @@ homeContent: |
   <!--[lactf /div]-->
 
   <!--[lactf div class="lactf-rules card"]-->
-  
+   # In-person LACTF meeting
+  Participants are  invited to join us at the Kerckhoff Grand Salon at UCLA for a concurrent in-person meeting.
+
   # Challenge Archive
-  **All of our challenges, including deployment configs and some author solve scripts, can be found here.** The challenge archive for the 2023 edition of LACTF can be found here: [https://github.com/uclaacm/lactf-archive/tree/main/2023](https://github.com/uclaacm/lactf-archive/tree/main/2023).  
+  All of our past challenges, including deployment configs and some author solve scripts, can be found here: [https://github.com/uclaacm/lactf-archive](https://github.com/uclaacm/lactf-archive).  
 
   ## Eligibility
   Anyone can participate in LA CTF (except organizers, ACM Cyber interns and officers, and challenge authors). However, due to various reasons, we can only guarantee that prizes can be awarded to teams in the United States. In order for a team to be eligible for UCLA-specific prizes, all members of the team must be current UCLA undergraduate students.
