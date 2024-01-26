@@ -12,6 +12,15 @@ homeContent: |
   <timer></timer>
 
   <!--[lactf /div]-->
+  
+  <!--[lactf div class="lactf-sponsors card"]-->
+
+  ## Sponsors
+  LA CTF would not be possible without all of these amazing sponsors!
+
+  <sponsors></sponsors>
+
+  <!--[lactf /div]-->
 
   <!--[lactf div class="lactf-rules card"]-->
   
@@ -49,15 +58,6 @@ homeContent: |
 
   <br/>
 
-
-  <!--[lactf /div]-->
-
-  <!--[lactf div class="lactf-sponsors card"]-->
-
-  ## Sponsors
-  LA CTF would not be possible without all of these amazing sponsors!
-
-  <sponsors></sponsors>
 
   <!--[lactf /div]-->
 
