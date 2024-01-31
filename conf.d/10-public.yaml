@@ -89,6 +89,10 @@ sponsors:
     icon: https://static.lac.tf/sponsors/amber_latticework.png
     description: "Store your data locally and access it from anywhere without subscription fees. UCLA students, open a ticket in the LA CTF discord for a 25% discount. <br/> [https://www.myamberlife.com/](https://www.myamberlife.com/)"
     url: "https://www.myamberlife.com/"
+  - name: CrowdStrike
+    icon: https://static.lac.tf/sponsors/crowdstrike.png
+    description: "#WeAreCrowdStrike and our mission is to stop breaches. Since our inception, our market leading cloud-native platform has offered unparalleled protection against the most sophisticated cyberattacks."
+    url: "https://www.crowdstrike.com/en-us/"
 
 lactfPostTime: 1705824000000
 startTime: 1708142400000
