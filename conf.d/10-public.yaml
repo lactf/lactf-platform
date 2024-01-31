@@ -91,7 +91,7 @@ sponsors:
     url: "https://www.myamberlife.com/"
   - name: CrowdStrike
     icon: https://static.lac.tf/sponsors/crowdstrike.png
-    description: "\#WeAreCrowdStrike and our mission is to stop breaches. Since our inception, our market leading cloud-native platform has offered unparalleled protection against the most sophisticated cyberattacks."
+    description: "\\#WeAreCrowdStrike and our mission is to stop breaches. Since our inception, our market leading cloud-native platform has offered unparalleled protection against the most sophisticated cyberattacks."
     url: "https://www.crowdstrike.com/en-us/"
 
 lactfPostTime: 1705824000000
