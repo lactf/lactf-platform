@@ -81,10 +81,6 @@ sponsors:
     icon: https://static.lac.tf/sponsors/lockheed_martin.svg
     description: "[**UCLA Affiliate**](https://www.cs.ucla.edu/affiliate-memberships/) <br />  Lockheed Martin is a leading global security and aerospace company, ensuring those we serve always stay ahead and ready in the defense industry."
     url: "https://www.lockheedmartin.com/en-us/index.html"
-  - name: Google Cloud
-    icon: https://static.lac.tf/sponsors/google_cloud.png
-    description: "Meet your business challenges head on with cloud computing services from Google, including data management, hybrid & multi-cloud, and AI & ML. Infra sponsored by: <br/> [https://goo.gle/ctfsponsorship](https://goo.gle/ctfsponsorship)"
-    url: "https://goo.gle/ctfsponsorship"
   - name: OtterSec
     icon: https://static.lac.tf/sponsors/ottersec.png
     description: "OtterSec is a blockchain security company focused on identifying and patching critical exploits before our clients go to market. We work closely with leading teams to provide a holistic and collaborative approach to security."
@@ -101,6 +97,10 @@ sponsors:
     icon: https://static.lac.tf/sponsors/tryhackme.png
     description: "TryHackMe is a free online platform for learning cyber security, using hands-on exercises and labs, all through your browser!"
     url: "https://tryhackme.com"
+  - name: Google Cloud
+    icon: https://static.lac.tf/sponsors/google_cloud.png
+    description: "Meet your business challenges head on with cloud computing services from Google, including data management, hybrid & multi-cloud, and AI & ML. Infra sponsored by: <br/> [https://goo.gle/ctfsponsorship](https://goo.gle/ctfsponsorship)"
+    url: "https://goo.gle/ctfsponsorship"
 
 lactfPostTime: 1705824000000
 startTime: 1708142400000
