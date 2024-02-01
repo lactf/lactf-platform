@@ -77,6 +77,10 @@ sponsors:
     icon: https://static.lac.tf/sponsors/trail-of-bits.png
     description: "Trail of Bits helps secure the world's most targeted organizations and products. We combine high-end security research with a real-world attacker mentality to reduce risk and fortify code."
     url: "https://www.trailofbits.com/"
+  - name: Lockheed Martin
+    icon: https://static.lac.tf/sponsors/lockheed_martin.svg
+    description: "[**UCLA Affiliate**](https://www.cs.ucla.edu/affiliate-memberships/) <br />  Lockheed Martin is a leading global security and aerospace company, ensuring those we serve always stay ahead and ready in the defense industry."
+    url: "https://www.lockheedmartin.com/en-us/index.html"
   - name: Google Cloud
     icon: https://static.lac.tf/sponsors/google_cloud.png
     description: "Meet your business challenges head on with cloud computing services from Google, including data management, hybrid & multi-cloud, and AI & ML. Infra sponsored by: <br/> [https://goo.gle/ctfsponsorship](https://goo.gle/ctfsponsorship)"
@@ -93,6 +97,10 @@ sponsors:
     icon: https://static.lac.tf/sponsors/crowdstrike.png
     description: "&#35;WeAreCrowdStrike and our mission is to stop breaches. Since our inception, our market leading cloud-native platform has offered unparalleled protection against the most sophisticated cyberattacks."
     url: "https://www.crowdstrike.com/en-us/"
+  - name: TryHackMe
+    icon: https://static.lac.tf/sponsors/tryhackme.png
+    description: "TryHackMe is a free online platform for learning cyber security, using hands-on exercises and labs, all through your browser!"
+    url: "https://tryhackme.com"
 
 lactfPostTime: 1705824000000
 startTime: 1708142400000
