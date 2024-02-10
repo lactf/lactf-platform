@@ -1,5 +1,5 @@
 FROM lactf-platform-build-layer AS build
-FROM node:12.16.3-buster-slim AS run
+FROM node:21-bookworm-slim AS run
 WORKDIR /app
 
 COPY --from=build /app/yarn.lock /app/package.json /app/
