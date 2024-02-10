@@ -41,7 +41,7 @@ class DatabaseProvider extends EventEmitter implements Provider {
     chall = deepCopy(chall)
 
     const id = chall.id
-    delete chall.id
+    delete (chall as Challenge | {id?: unknown}).id
 
     return {
       id,
