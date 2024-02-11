@@ -2,10 +2,9 @@ FROM lactf-platform-build-layer AS build
 FROM node:21-bookworm-slim AS run
 WORKDIR /app
 
-COPY --from=build /app/yarn.lock /app/package.json /app/
-
+COPY . .
 ENV NODE_ENV production
-RUN yarn install --prod --frozen-lockfile && yarn cache clean
+RUN yarn set version berry && yarn install && yarn cache clean
 
 COPY --from=build /app/conf.d /app/conf.d
 COPY --from=build /app/dist /app/dist

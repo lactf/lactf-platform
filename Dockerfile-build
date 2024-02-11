@@ -1,8 +1,5 @@
 FROM node:21-bookworm-slim
 WORKDIR /app
 
-COPY package.json yarn.lock ./
-RUN yarn install --frozen-lockfile --dev && yarn cache clean
-
 COPY . .
-RUN yarn build
+RUN yarn set version berry && yarn install && yarn cache clean && yarn build
