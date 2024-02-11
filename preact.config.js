@@ -6,7 +6,7 @@ const assert = require('assert').strict
 
 const PurgecssPlugin = require('purgecss-webpack-plugin')
 
-export default (config, env, helpers) => {
+module.exports = (config, env, helpers) => {
   if (env.production) {
     // Disable sourcemaps
     config.devtool = false
@@ -21,7 +21,7 @@ export default (config, env, helpers) => {
 
   config.resolveLoader.modules.unshift(path.resolve(__dirname, 'client/lib/loaders'))
 
-  const { rule: { options: babelConfig } } = helpers.getLoadersByName(config, 'babel-loader')[0]
+  const { loader: { options: babelConfig } } = helpers.getLoadersByName(config, 'babel-loader')[0]
   babelConfig.plugins.push('transform-export-extensions')
 
   // The webpack base config has minicssextractplugin already loaded

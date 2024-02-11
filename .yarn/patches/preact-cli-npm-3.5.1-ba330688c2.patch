@@ -1,0 +1,14 @@
+diff --git a/src/lib/webpack/transform-config.js b/src/lib/webpack/transform-config.js
+index a36ae642575048993652002ad86f524a45f3fd83..7f14bd60b73cbc0eec12f24d2fead57e6e915532 100644
+--- a/src/lib/webpack/transform-config.js
++++ b/src/lib/webpack/transform-config.js
+@@ -107,7 +107,8 @@ module.exports = async function (env, webpackConfig, isServer = false) {
+ 
+ 	let m;
+ 	try {
+-		m = esmImport(cliConfig);
++		// me and Jason went through the seven stages of grief to find this line ~Andrew
++		m = await import(cliConfig);
+ 	} catch (error) {
+ 		warn(
+ 			`Failed to load preact-cli config file, using default!\n${

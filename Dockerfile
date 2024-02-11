@@ -1,19 +1,15 @@
 FROM node:21-bookworm-slim AS build
 WORKDIR /app
 
-COPY package.json yarn.lock ./
-RUN yarn install --dev --frozen-lockfile && yarn cache clean
-
 COPY . .
-RUN yarn build
+RUN yarn set version berry && yarn install && yarn cache clean && yarn build
 
 FROM node:21-bookworm-slim AS run
 WORKDIR /app
 
-COPY yarn.lock package.json /app/
-
+COPY . .
 ENV NODE_ENV production
-RUN yarn install --prod --frozen-lockfile && yarn cache clean
+RUN yarn set version berry && yarn install && yarn cache clean
 
 COPY conf.d /app/conf.d
 COPY --from=build /app/dist /app/dist

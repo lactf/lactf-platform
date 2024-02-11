@@ -8,7 +8,7 @@
     "lint:strict": "sh -c \"tsc --noEmit -p tsconfig.strict.json ; eslint .\"",
     "start": "node --enable-source-maps --unhandled-rejections=strict dist/server/index.js",
     "migrate": "yarn build:ts && cross-env RCTF_DATABASE_MIGRATE=only yarn start",
-    "build:client": "preact build --src client/src --template client/index.html --dest dist/build --no-prerender --no-inline-css",
+    "build:client": "preact build --verbose --src client/src --template client/index.html --dest dist/build --no-prerender --no-inline-css",
     "build:ts": "tsc && yarn copy-static",
     "build": "yarn build:ts && yarn build:client",
     "watch:client": "cross-env NODE_ENV=development preact watch --src client/src --template client/index.html",
@@ -101,9 +101,9 @@
     "pascal-case": "3.1.1",
     "pino-pretty": "4.1.0",
     "preact": "^10.19.4",
-    "preact-cli": "^3.5.1",
-    "preact-markup": "2.0.0",
-    "preact-router": "3.2.1",
+    "preact-cli": "patch:preact-cli@npm%3A3.5.1#.yarn/patches/preact-cli-npm-3.5.1-ba330688c2.patch",
+    "preact-markup": "^2.1.1",
+    "preact-router": "^4.1.2",
     "purgecss-webpack-plugin": "2.3.0",
     "snarkdown": "1.2.2",
     "supertest": "4.0.2",
@@ -125,5 +125,6 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "packageManager": "yarn@4.1.0"
 }

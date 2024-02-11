@@ -30,3 +30,7 @@ $RECYCLE.BIN
 
 # preact-cli build size plugin
 size-plugin.json
+
+# ACM Cyber: update to yarn 4
+.yarn/*
+!.yarn/patches
