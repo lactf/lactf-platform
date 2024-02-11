@@ -36,18 +36,19 @@ homeContent: |
   2. During the competition, each person may only be a part of **one team** total, and only members of a given team may assist in solving a challenge for that team. Do not share flags, challenge solutions, tips, hints, or otherwise implicitly or explicitly leak information about solving challenges outside your team until after the CTF is over.
   3. Each team must have a valid email address that should serve as the point of contact. UCLA students should use a @g.ucla.edu email to register for access to the UCLA-only division.
   4. There are two divisions for teams, **UCLA** and **Open**. Teams in the UCLA-only division may consist of up to **four** participants, all of which must be **current UCLA students**. Open division teams have no team size or makeup restrictions. UCLA students may choose to participate in either division but not both.
-  5. No flag or hint sharing. Do **not** solicit or accept hints or guidance from anyone except through official support channels.
+  5. No flag or hint sharing. Do **not** solicit or accept hints or guidance from any person except through official support channels. You are allowed and encouraged to use technologies such as ChatGPT or Google Gemini to assist you.
   6. Do **not** attempt to attack or interfere with other teams or any servers used in this competition that are not explicitly designated for being hacked in a problem. Do not perform any sort of online bruteforce against any of our systems including challenges, such as dirbuster or nmap - it won't help. If you ever have a question about whether something is allowed, please ask!
-  7. No brute-force guessing flags. Feel free to try several flags if you're not sure, but don't try any sort of brute forcing on the scoreboard platform.
+  7. Flags are of the format `lactf{TEXT_HERE}` unless otherwise noted on the challenge description. No brute-force guessing flags. Feel free to try several flags if you're not sure, but don't try any sort of brute forcing on the scoreboard platform. If you think a flag is valid but the system isn't taking it, please contact us using one of the methods below and we'd be happy to help.
   8. Finally, **have fun and try and learn something new**!
 
   ## Scoring
   1. Each problem has a point value listed. The team who earns the most points wins the competition. If two teams have the same number of points, the tiebreak is which team reached their top score first.
   2. Challenges are subject to **dynamic scoring**: the **more** teams that solve a particular challenge, the **less** points that challenge will be worth to **all** teams who solved the challenge. There is no time score bonus awarded.
   3. The prize winning teams will be contacted by us after the contest ends. Please make sure the email used to register the team is the email you'd like us to contact.
-  4. We reserve the right to require write-ups from the winning teams for any problems we choose as proofs of solution.
-  5. In the event that a team that is ineligible for prizes wins a prize, the next eligible team will recieve that prize. It may take some time for prizes to settle; please be patient!
-  6. Anyone who violates these rules will be disqualified. **All decisions made by LA CTF organizers are final**.
+  4. Teams **must** solve the `trivial/welcome` challenge in order to be eligible to win prizes as a confirmation they have read the rules. The flag to solve this challenge is `lactf{i_read_the_rules}`.
+  5. We reserve the right to require write-ups from the winning teams for any problems we choose as proofs of solution.
+  6. In the event that a team that is ineligible for prizes wins a prize, the next eligible team will recieve that prize. It may take some time for prizes to settle; please be patient!
+  7. Anyone who violates these rules will be disqualified. **All decisions made by LA CTF organizers are final**.
 
   ## Prizes
   The prizes for the 2024 edition of LACTF are to be determined. Stay tuned!
