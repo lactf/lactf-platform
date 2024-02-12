@@ -3,9 +3,9 @@ import withStyles from './jss'
 const Footer = ({ classes }) => (
   <div class={classes.root}>
     <span>
-      <a href='https://github.com/uclaacm/lactf-platform' target='_blank' rel='noopener noreferrer'>LA CTF Platform</a> - Powered by <a href='https://rctf.redpwn.net/' target='_blank' rel='noopener noreferrer'>rCTF</a>
-      &nbsp;- Made with 🤍 by <a href='https://acmcyber.com/' target='_blank' rel='noopener noreferrer'>ACM Cyber</a>
-      &nbsp;&amp; <a href='https://pbr.uclaacm.com/' target='_blank' rel='noopener noreferrer'>Psi Beta Rho</a>
+      <a href='https://github.com/lactf/lactf-platform' target='_blank' rel='noopener noreferrer'>LA CTF Platform</a> - Powered by <a href='https://rctf.redpwn.net/' target='_blank' rel='noopener noreferrer'>rCTF</a>
+      &nbsp;- Made with 🤍 by <a href='https://www.acmcyber.com/' target='_blank' rel='noopener noreferrer'>ACM Cyber</a>
+      &nbsp;&amp; <a href='https://pbr.acmcyber.com/' target='_blank' rel='noopener noreferrer'>Psi Beta Rho</a>
     </span>
   </div>
 )
