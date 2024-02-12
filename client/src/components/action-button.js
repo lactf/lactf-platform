@@ -5,7 +5,7 @@ const ActionButton = withStyles({
     padding: '16px !important',
     color: '#fff',
     background: 'var(--bg-dark)',
-    backdropFilter: 'blur(10px)',
+    backdropFilter: 'blur(2px)',
     boxShadow: 'rgba(250,250,250,0.6) 0px 0px 1rem 0px',
     fontSize: '20px',
     borderRadius: '1rem',

@@ -5,7 +5,7 @@ import config from '../config'
 const NotStarted = withStyles({
   card: {
     background: 'var(--bg-dark)',
-    backdropFilter: 'blur(10px)',
+    backdropFilter: 'blur(2px)',
     padding: '30px !important',
     flexDirection: 'column'
   },

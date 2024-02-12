@@ -315,7 +315,7 @@ export default withStyles({
     marginBottom: '1em',
     paddingBottom: '0.625em',
     background: 'var(--bg-dark)',
-    backdropFilter: 'blur(10px)',
+    backdropFilter: 'blur(2px)',
     '& input, & textarea': {
       color: '#fff !important',
       background: 'var(--bg-darker)'

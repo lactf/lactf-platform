@@ -63,7 +63,7 @@ export default withStyles({
   },
   modal: {
     background: 'var(--bg-dark)',
-    backdropFilter: 'blur(10px)',
+    backdropFilter: 'blur(2px)',
     fontFamily: 'Poppins',
     color: '#fff',
     maxWidth: 'initial'

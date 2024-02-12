@@ -22,7 +22,7 @@ const Scoreboard = withStyles({
     paddingBottom: '1.5em',
     paddingTop: '2.125em',
     background: 'var(--bg-dark)',
-    backdropFilter: 'blur(10px)',
+    backdropFilter: 'blur(2px)',
     '& .frame__subtitle': {
       color: '#fff'
     },
