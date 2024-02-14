@@ -70,7 +70,7 @@ export default withStyles({
   },
   input: {
     background: 'var(--bg-dark)',
-    backdropFilter: 'blur(2px)',
+    backdropFilter: 'none',
     color: '#fff !important'
   },
   root: {

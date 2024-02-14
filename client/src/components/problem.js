@@ -175,7 +175,7 @@ export default withStyles({
     marginBottom: '1em',
     paddingBottom: '0.625em',
     background: 'var(--bg-dark)',
-    backdropFilter: 'blur(2px)'
+    backdropFilter: 'none'
     /* '& a': {
       color: 'white'
     } */

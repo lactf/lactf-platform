@@ -27,7 +27,7 @@ export default withStyles({
   },
   card: {
     background: 'hwb(0 0% 100% / .25)',
-    backdropFilter: 'blur(2px)'
+    backdropFilter: 'none'
   },
   content: {
     paddingTop: '10px'
