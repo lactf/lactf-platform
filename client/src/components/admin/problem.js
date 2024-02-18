@@ -6,13 +6,6 @@ import Modal from '../../components/modal'
 import { updateChallenge, deleteChallenge, uploadFiles } from '../../api/admin/challs'
 import { useToast } from '../../components/toast'
 import { encodeFile } from '../../util'
-import Markdown from '../markdown'
-
-const ExternalLink = (props) => <a {...props} target='_blank' />
-
-const markdownComponents = {
-  A: ExternalLink
-}
 
 const DeleteModal = withStyles({
   modalBody: {
@@ -277,11 +270,6 @@ const Problem = ({ classes, problem, update: updateClient }) => {
                 value={flag}
                 onChange={handleFlagChange}
               />
-            </div>
-
-            <div>
-              <p>Rendered:</p>
-              <Markdown content={description} components={markdownComponents} />
             </div>
 
             {
