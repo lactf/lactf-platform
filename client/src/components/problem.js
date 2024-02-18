@@ -184,6 +184,7 @@ export default withStyles({
   blood: {
     '& a': {
       color: '#fff',
+      textDecoration: 'underline'
     },
     '& input': {
       backgroundColor: 'var(--bg-darker) !important',
