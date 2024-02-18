@@ -2,13 +2,14 @@ import config from '../../config/server'
 import * as challenges from '../../challenges'
 import { responses } from '../../responses'
 import { getChallengeInfo } from '../../cache/leaderboard'
+import perms from '../../util/perms'
 
 export default {
   method: 'GET',
   path: '/challs',
   requireAuth: true,
-  handler: async () => {
-    if (Date.now() < config.startTime) {
+  handler: async ({ user }) => {
+    if (Date.now() < config.startTime && !(user.perms & perms.challsRead)) {
       return responses.badNotStarted
     }
 
