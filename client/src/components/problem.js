@@ -182,8 +182,10 @@ export default withStyles({
   },
   // LA CTF: track bloods
   blood: {
-    '& .markup a': {
+    '& a': {
       color: '#fff',
+    },
+    '& .markup a': {
       textDecoration: 'underline'
     },
     '& input': {
