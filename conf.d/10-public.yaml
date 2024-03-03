@@ -12,6 +12,13 @@ homeContent: |
   <timer></timer>
 
   <!--[lactf /div]-->
+
+  <!--[lactf div class="lactf-rules card"]-->
+
+  # Challenge Archive
+  **Challenges are now offline.** All of our challenges, including Docker deployment configs and some author solve scripts, can be found at [https://github.com/uclaacm/lactf-archive/tree/main/2024](https://github.com/uclaacm/lactf-archive/tree/main/2024).
+
+  <!--[lactf /div]-->
   
   <!--[lactf div class="lactf-sponsors card"]-->
 
