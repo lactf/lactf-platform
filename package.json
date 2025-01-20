@@ -57,9 +57,12 @@
     "pg": "^8.3.3",
     "redis": "^3.0.2",
     "uuid": "^8.3.0",
-    "yaml": "^1.10.0"
+    "yaml": "^2.7.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@preact/preset-vite": "^2.9.4",
+    "@types/babel__core": "^7",
     "@types/content-disposition": "0.5.3",
     "@types/mailgun-js": "0.22.10",
     "@types/mustache": "4.0.1",
@@ -83,13 +86,13 @@
     "eslint-plugin-ava": "^10.5.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-n": "^16.6.2",
-    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-standard": "^5.0.0",
     "faker": "5.1.0",
     "get-port": "5.1.1",
     "glob": "^10.3.10",
     "husky": "4.2.5",
-    "jss": "10.4.0",
+    "jss": "^9.7.0",
     "jss-camel-case": "6.1.0",
     "jss-nested": "6.0.1",
     "jss-vendor-prefixer": "8.0.1",
@@ -101,7 +104,6 @@
     "pascal-case": "3.1.1",
     "pino-pretty": "4.1.0",
     "preact": "^10.19.4",
-    "preact-cli": "patch:preact-cli@npm%3A3.5.1#.yarn/patches/preact-cli-npm-3.5.1-ba330688c2.patch",
     "preact-markup": "^2.1.1",
     "preact-router": "^4.1.2",
     "purgecss-webpack-plugin": "2.3.0",
@@ -109,7 +111,8 @@
     "supertest": "4.0.2",
     "svg-sprite-loader": "5.0.0",
     "type-fest": "0.16.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vite": "^6.0.7"
   },
   "description": "rctf is RedpwnCTF's CTF platform. It is developed and maintained by the [redpwn](https://redpwn.net) CTF team.",
   "repository": {
