@@ -10,17 +10,6 @@ homeContent: |
   ![LACTF Banner](https://static.lac.tf/images/LongLogoWavingTransparentBig.gif)
 
   <timer></timer>
-
-  <!--[lactf /div]-->
-
-  <!--[lactf div class="lactf-rules card"]-->
-
-  # Challenge Archive
-  **Challenges are now offline.** All of our challenges, including Docker deployment configs and some author solve scripts, can be found at [https://github.com/uclaacm/lactf-archive/tree/main/2024](https://github.com/uclaacm/lactf-archive/tree/main/2024).
-
-  <br/>
-
-  <!--[lactf /div]-->
   
   <!--[lactf div class="lactf-sponsors card"]-->
 
@@ -32,10 +21,6 @@ homeContent: |
   <!--[lactf /div]-->
 
   <!--[lactf div class="lactf-rules card"]-->
-  
-  ## In-Person Event
-  Join us at the Kerckhoff Grand Salon at UCLA during the CTF for speakers and other fun events!
-  More information on the schedule can be found at [https://static.lac.tf/schedule.pdf](https://static.lac.tf/schedule.pdf).
 
   ## Eligibility
   Anyone can participate in LA CTF (except organizers, ACM Cyber officers, and challenge authors). However, due to various reasons, we can only award prizes to teams with a United States-based point-of-contact, and in the form of US Amazon Gift Cards. In order for a team to be eligible for UCLA-specific prizes, all members of the team must be current UCLA students.
@@ -45,7 +30,7 @@ homeContent: |
   2. During the competition, each person may only be a part of **one team** total, and only members of a given team may assist in solving a challenge for that team. Do not share flags, challenge solutions, tips, hints, or otherwise implicitly or explicitly leak information about solving challenges outside your team until after the CTF is over.
   3. Each team must have a valid email address that should serve as the point of contact. UCLA students should use a @g.ucla.edu email to register for access to the UCLA-only division.
   4. There are two divisions for teams, **UCLA** and **Open**. Teams in the UCLA-only division may consist of up to **four** participants, all of which must be **current UCLA students**. Open division teams have no team size or makeup restrictions. UCLA students may choose to participate in either division but not both.
-  5. No flag or hint sharing. Do **not** solicit or accept hints or guidance from any person except through official support channels. You are allowed to use technologies such as ChatGPT or Google Gemini to assist you.
+  5. No flag or hint sharing. Do **not** solicit or accept hints or guidance from any person except through official support channels. You are allowed to use technologies such as ChatGPT or Google Gemini to assist you, though please do not open a support ticket asking why the hallucinated flag from ChatGPT isn't working.
   6. Do **not** attempt to attack or interfere with other teams or any servers used in this competition that are not explicitly designated for being hacked in a problem. Do not perform any sort of online bruteforce against any of our systems including challenges, such as dirbuster or nmap - it won't help. If you ever have a question about whether something is allowed, please ask!
   7. Flags are of the format `lactf{TEXT_HERE}` unless otherwise noted on the challenge description. No brute-force guessing flags. Feel free to try several flags if you're not sure, but don't try any sort of brute forcing on the scoreboard platform. If you think a flag is valid but the system isn't taking it, please contact us using one of the methods below and we'd be happy to help.
   8. Finally, **have fun and try and learn something new**!
@@ -54,35 +39,14 @@ homeContent: |
   1. Each problem has a point value listed. Team rankings are decided by number of points, highest to lowest. If two teams have the same number of points, the tiebreak is which team reached their top score first, excluding trivial category challenges.
   2. Challenges are subject to **dynamic scoring**: the **more** teams that solve a particular challenge, the **less** points that challenge will be worth to **all** teams who solved the challenge. There is no time score bonus awarded.
   3. The prize winning teams will be contacted by us after the contest ends. Please make sure the email used to register the team is the email you'd like us to contact. **Note: Prizes are in the form of US Amazon Gift Cards**.
-  4. Teams **must** solve the `welcome/rules` challenge in order to be eligible to win prizes as a confirmation they have read the rules. The flag to solve this challenge is `lactf{i_read_the_rules}`.
+  4. Teams **must** solve the `welcome/rules` challenge in order to be eligible to win prizes as a confirmation they have read and agree to the rules. The flag to solve this challenge is `lactf{i_understand_and_agree_to_the_rules}`.
   5. We reserve the right to require write-ups from the winning teams for any problems we choose as proofs of solution.
   6. In the event that a team that is ineligible for prizes wins a prize, the next eligible team will recieve that prize. It may take some time for prizes to settle; please be patient!
   7. Anyone who violates these rules will be disqualified. **All decisions made by LA CTF organizers are final**.
 
   ## Prizes
-  LA CTF will have prizes for both the UCLA and open sections! While there will be two sections for prizes, all of the challenges will be the same for both sections. Prizes will be given in the form of US Amazon gift cards or by arrangement.
-
-  UCLA Section: The UCLA Section will be composed of teams that must consist of a maximum of four current UCLA undergraduate students.
-  - 1st place: $200 + Amber Pro Smart Storage Device + 4x 3 month TryHackMe Premium vouchers
-  - 2nd place: $140 + Amber Pro Smart Storage Device + 2x 3 month, 2x 1 month TryHackMe Premium vouchers
-  - 3rd place: $100 + 4x 1 month TryHackMe Premium vouchers
-  - 4th & 5th place: $80 + 2x 1 month TryHackMe Premium vouchers
-  - 6th-10th place: $40
-
-  UCLA division prizes will be distributed directly to individual team members. Amounts listed are per team, and no more than one TryHackMe voucher may go to any individual in a UCLA Division team.
+  Please see https://lac.tf for more information about prizes.
   
-  Open Section: The Open Section will be composed of teams with no size limit and can be from anywhere to be eligible for prizes. All skill levels and experiences are welcomed!
-  
-  - 1st place: $500 + 2x 3 month TryHackMe Premium vouchers
-  - 2nd place: $300 + 2x 1 month TryHackMe Premium vouchers
-  - 3rd place: $200 + 1x 1 month TryHackMe Premium voucher
-  - 4th & 5th place: $100
-  
-  Open division prizes will be distributed to the email linked to the given winning teams. Amounts listed are per team.
-  
-  Writeup Prizes: A pool of at least $400 worth of prize money will be given out via writeup prizes, of which $200 is designated for UCLA students. Writeup prizes are made out to the individual or group that made and submitted a winning writeup. Writeup judgement will be done by the LA CTF Organizers collectively. Decisions made by the organizers are final. The writeup submission form will be active for 1 week after the CTF is over, and will be posted in our discord.
-
-  Meme Prizes: Want to take a break and blow off steam? Post some memes in our discord to potentially win some meme prizes!
   ## Support
   If at any point you need to contact us during the competition, please join us in discord at [https://lac.tf/discord](https://lac.tf/discord) and use the #support channel for quick support.
   For private questions before the competition starts, please email [uclacyber+lactf@gmail.com](mailto:uclacyber+lactf@gmail.com).
@@ -100,10 +64,6 @@ homeContent: |
   <!--[lactf /div]-->
 
 sponsors:
-  - name: Sandia National Laboratories
-    icon: https://static.lac.tf/sponsors/sandia_national_laboratories.svg
-    description: "[**UCLA Affiliate**](https://www.cs.ucla.edu/affiliate-memberships/) <br /> Sandia strives to become the laboratory that the U.S. turns to first for technology solutions to the most challenging problems that threaten peace and freedom for our nation and the globe."
-    url: "https://www.sandia.gov/"
   - name: Trail of Bits
     icon: https://static.lac.tf/sponsors/trail-of-bits.png
     description: "Trail of Bits helps secure the world's most targeted organizations and products. We combine high-end security research with a real-world attacker mentality to reduce risk and fortify code."
@@ -133,9 +93,9 @@ sponsors:
     description: "Meet your business challenges head on with cloud computing services from Google, including data management, hybrid & multi-cloud, and AI & ML. Infra sponsored by: <br/> [https://goo.gle/ctfsponsorship](https://goo.gle/ctfsponsorship)"
     url: "https://goo.gle/ctfsponsorship"
 
-lactfPostTime: 1705824000000
-startTime: 1708142400000
-endTime: 1708293600000
+lactfPostTime: 1736546400000
+startTime: 1739073600000
+endTime: 1739224800000
 
 divisions:
   ucla: UCLA
