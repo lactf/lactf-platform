@@ -145,7 +145,7 @@ export default withStyles({
     } catch {}
 
     const result = await login({
-      teamToken
+      teamToken: decodeURIComponent(teamToken)
     })
     if (result.authToken) {
       setAuthToken({ authToken: result.authToken })

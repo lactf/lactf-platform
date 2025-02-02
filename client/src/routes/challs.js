@@ -194,7 +194,7 @@ const Challenges = ({ classes }) => {
             <div class={classes.showSolved}>
               <div class='form-ext-control form-ext-checkbox'>
                 <input id='show-solved' class='form-ext-input' type='checkbox' checked={showSolved} onChange={handleShowSolvedChange} />
-                <label for='show-solved' class='form-ext-label'>Show Solved ({solvedCount}/{problems.length} solved)</label>
+                <label for='show-solved' class='form-ext-label'>Show Solved ({solvedCount}/{(problems ?? []).length} solved)</label>
               </div>
             </div>
           </div>
