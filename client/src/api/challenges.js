@@ -1,5 +1,4 @@
 import { request, handleResponse } from './util'
-import { privateProfile } from './profile'
 
 export const getChallenges = async () => {
   const resp = await request('GET', '/challs')
@@ -11,20 +10,6 @@ export const getChallenges = async () => {
   }
 
   return handleResponse({ resp, valid: ['goodChallenges'] })
-}
-
-export const getPrivateSolves = async () => {
-  const { data, error } = await privateProfile()
-
-  if (error) {
-    return { error }
-  }
-  return {
-    solves: data.solves,
-    // LA CTF: track bloods
-    bloods: data.bloods
-    // --------------------
-  }
 }
 
 export const getSolves = ({ challId, limit, offset }) => {

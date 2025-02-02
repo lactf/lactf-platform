@@ -13,11 +13,12 @@ export type ClientConfig = Pick<ServerConfig,
   'startTime' |
   'endTime' |
   'userMembers' |
-  'faviconUrl'
+  'faviconUrl' |
+  'instancerUrl'
 > & {
   emailEnabled: boolean;
-  ctftime?: Pick<NonNullable<ServerConfig['ctftime']>, 'clientId'>
-  recaptcha?: Pick<NonNullable<ServerConfig['recaptcha']>, 'siteKey' | 'protectedActions'>
+  ctftime?: Pick<NonNullable<ServerConfig['ctftime']>, 'clientId'>;
+  recaptcha?: Pick<NonNullable<ServerConfig['recaptcha']>, 'siteKey' | 'protectedActions'>;
 }
 
 const config: ClientConfig = {
@@ -45,7 +46,8 @@ const config: ClientConfig = {
     : {
         siteKey: server.recaptcha.siteKey,
         protectedActions: server.recaptcha.protectedActions
-      }
+      },
+  instancerUrl: server.instancerUrl
 }
 
 export default config
