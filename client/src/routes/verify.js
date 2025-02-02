@@ -25,7 +25,7 @@ const Verify = () => {
         setError(verifyRes.verifyToken)
       }
     } else {
-      setError("No verification token provided.")
+      setError('No verification token provided.')
     }
   }
 

@@ -22,7 +22,7 @@ export const getPrivateSolves = async () => {
   return {
     solves: data.solves,
     // LA CTF: track bloods
-    bloods: data.bloods,
+    bloods: data.bloods
     // --------------------
   }
 }

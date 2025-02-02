@@ -385,10 +385,10 @@ const Profile = ({ uuid, classes }) => {
         {isPrivate
           ? (
             <PrivateSolvesCard solves={solves} />
-          )
+            )
           : (
             <PublicSolvesCard solves={solves} />
-          )}
+            )}
       </div>
     </div>
   )
