@@ -35,13 +35,17 @@ const config: ClientConfig = {
   emailEnabled: server.email != null,
   userMembers: server.userMembers,
   faviconUrl: server.faviconUrl,
-  ctftime: server.ctftime == null ? undefined : {
-    clientId: server.ctftime.clientId
-  },
-  recaptcha: server.recaptcha == null ? undefined : {
-    siteKey: server.recaptcha.siteKey,
-    protectedActions: server.recaptcha.protectedActions
-  }
+  ctftime: server.ctftime == null
+    ? undefined
+    : {
+        clientId: server.ctftime.clientId
+      },
+  recaptcha: server.recaptcha == null
+    ? undefined
+    : {
+        siteKey: server.recaptcha.siteKey,
+        protectedActions: server.recaptcha.protectedActions
+      }
 }
 
 export default config
