@@ -1,3 +1,4 @@
+import { Fragment } from 'preact'
 import { useEffect, useState } from 'preact/hooks'
 import Error from './error'
 import config from '../config'
@@ -25,7 +26,7 @@ const Verify = () => {
         setError(verifyRes.verifyToken)
       }
     } else {
-      setError("No verification token provided.")
+      setError('No verification token provided.')
     }
   }
 

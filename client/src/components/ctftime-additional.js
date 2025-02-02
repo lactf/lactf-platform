@@ -60,7 +60,7 @@ export default withStyles({
   }, [handleRegister])
 
   // Try login with CTFtime token only, if fails prompt for name
-  useEffect(handleRegister, [])
+  useEffect(handleRegister, [handleRegister])
 
   return (
     <div class='row u-center'>

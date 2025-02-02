@@ -72,7 +72,7 @@ class DatabaseProvider extends EventEmitter implements Provider {
   }
 
   async deleteChallenge (id: string): Promise<void> {
-    await db.challenges.removeChallengeById({ id: id })
+    await db.challenges.removeChallengeById({ id })
 
     void this.update()
   }

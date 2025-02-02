@@ -242,7 +242,7 @@ const Scoreboard = withStyles({
             <div class='frame__subtitle'>Teams per page</div>
             <div class='input-control'>
               <select required class='select' name='pagesize' value={pageSize} onChange={pageSizeChangeHandler}>
-                {PAGESIZE_OPTIONS.map(sz => <option value={sz}>{sz}</option>)}
+                {PAGESIZE_OPTIONS.map(sz => <option key={sz} value={sz}>{sz}</option>)}
               </select>
             </div>
             {loggedIn &&

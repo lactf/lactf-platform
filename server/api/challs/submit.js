@@ -83,9 +83,9 @@ export default {
     }
 
     try {
-      await db.solves.newSolve({ id: uuidv4(), challengeid: challengeid, userid: uuid, createdat: new Date() })
+      await db.solves.newSolve({ id: uuidv4(), challengeid, userid: uuid, createdat: new Date() })
       // LA CTF: track bloods
-      let rank = (await db.solves.getBloodByUserIdAndChallId({ userid: uuid, challengeid }))?.rank ?? -1
+      const rank = (await db.solves.getBloodByUserIdAndChallId({ userid: uuid, challengeid }))?.rank ?? -1
       return [responses.goodFlag, { rank }]
       // --------------------
     } catch (e) {

@@ -15,9 +15,16 @@ export default {
 
     const allowedDivisions = util.restrict.allowedDivisions(user.email)
 
+    const instancerToken = await auth.token.getToken(auth.token.tokenKinds.instancer, {
+      teamId: uuid,
+      email: user.email,
+      name: user.name
+    })
+
     return [responses.goodUserData, {
       ...userData,
       teamToken,
+      instancerToken,
       allowedDivisions,
       id: uuid,
       email: user.email

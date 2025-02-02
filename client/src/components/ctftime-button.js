@@ -60,7 +60,7 @@ export default withStyles({
 
   render ({ classes, ...props }) {
     return (
-      <div {...props} >
+      <div {...props}>
         <button class={classes.ctftimeButton} onClick={this.handleClick}>
           <Ctftime />
         </button>
