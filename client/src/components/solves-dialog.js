@@ -109,7 +109,7 @@ const SolvesDialog = withStyles({
                     <div class={classes.label}>Team</div>
                     <div class={classes.label}>Solve time</div>
                     {solves.map((solve, i) => (
-                      <Fragment>
+                      <Fragment key={solve.userId}>
                         <div class={`${classes.inlineLabel} ${classes.number}`}>#</div>
                         <div class={classes.number}>{(page - 1) * pageSize + i + 1}</div>
                         <div class={classes.inlineLabel}>Team</div>

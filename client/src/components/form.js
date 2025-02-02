@@ -22,7 +22,7 @@ export default withStyles({
       {
         [].concat(children).map(input => {
           if (input.props === undefined) {
-            return
+            return null
           }
           if (!input.props.name) {
             return input

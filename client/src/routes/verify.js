@@ -1,3 +1,4 @@
+import { Fragment } from 'preact'
 import { useEffect, useState } from 'preact/hooks'
 import Error from './error'
 import config from '../config'
