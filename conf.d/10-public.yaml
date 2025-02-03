@@ -64,34 +64,46 @@ homeContent: |
   <!--[lactf /div]-->
 
 sponsors:
-  - name: Trail of Bits
-    icon: https://static.lac.tf/sponsors/trail-of-bits.png
-    description: "Trail of Bits helps secure the world's most targeted organizations and products. We combine high-end security research with a real-world attacker mentality to reduce risk and fortify code."
-    url: "https://www.trailofbits.com/"
-  - name: Lockheed Martin
-    icon: https://static.lac.tf/sponsors/lockheed_martin.svg
-    description: "[**UCLA Affiliate**](https://www.cs.ucla.edu/affiliate-memberships/) <br />  Lockheed Martin is a leading global security and aerospace company, ensuring those we serve always stay ahead and ready in the defense industry."
-    url: "https://www.lockheedmartin.com/en-us/index.html"
   - name: OtterSec
     icon: https://static.lac.tf/sponsors/ottersec.png
-    description: "OtterSec is a blockchain security company focused on identifying and patching critical exploits before our clients go to market. We work closely with leading teams to provide a holistic and collaborative approach to security."
+    description: "OtterSec is the leading blockchain security audit team, working closely with various Layer 1s and the protocols built on them."
     url: "https://osec.io/"
-  - name: Amber by LatticeWork
-    icon: https://static.lac.tf/sponsors/amber_latticework.png
-    description: "Store your data locally and access it from anywhere without subscription fees. UCLA students, join the LA CTF discord for a 30% discount."
-    url: "https://www.myamberlife.com/"
-  - name: CrowdStrike
-    icon: https://static.lac.tf/sponsors/crowdstrike.png
-    description: "&#35;WeAreCrowdStrike and our mission is to stop breaches. Since our inception, our market leading cloud-native platform has offered unparalleled protection against the most sophisticated cyberattacks."
-    url: "https://www.crowdstrike.com/en-us/"
-  - name: TryHackMe
-    icon: https://static.lac.tf/sponsors/tryhackme.png
-    description: "TryHackMe is a free online platform for learning cyber security, using hands-on exercises and labs, all through your browser!"
-    url: "https://tryhackme.com"
+  - name: Microsoft
+    icon: https://static.lac.tf/sponsors/microsoft.jpg
+    description: "Microsoft's mission is to empower every person and every organization on the planet to achieve more."
+    url: "https://www.microsoft.com/"
+  - name: Lockheed Martin
+    icon: https://static.lac.tf/sponsors/lockheed_martin.svg
+    description: "Lockheed Martin is a leading global security, defense and aerospace contractor, ensuring those we serve always stay ahead of ready."
+    url: "https://www.lockheedmartin.com/"
   - name: Google Cloud
     icon: https://static.lac.tf/sponsors/google_cloud.png
     description: "Meet your business challenges head on with cloud computing services from Google, including data management, hybrid & multi-cloud, and AI & ML. Infra sponsored by: <br/> [https://goo.gle/ctfsponsorship](https://goo.gle/ctfsponsorship)"
     url: "https://goo.gle/ctfsponsorship"
+  - name: CrowdStrike
+    icon: https://static.lac.tf/sponsors/crowdstrike.png
+    description: "CrowdStrike secures the most critical areas of risk – endpoints and cloud workloads, identity, and data – to keep customers ahead of today’s adversaries and stop breaches."
+    url: "https://www.crowdstrike.com/"
+  - name: Trail of Bits
+    icon: https://static.lac.tf/sponsors/trail-of-bits.png
+    description: "Trail of Bits helps secure the world's most targeted organizations and products. We combine high-end security research with a real-world attacker mentality to reduce risk and fortify code."
+    url: "https://www.trailofbits.com/"
+  - name: SpaceX
+    icon: https://static.lac.tf/sponsors/spacex.png
+    description: "SpaceX is looking for world-class talent ready to tackle challenging projects that will ultimately enable life on other planets. For example, we’re leveraging our experience in building rockets and spacecraft to deploy Starlink, the world’s most advanced broadband internet system."
+    url: "https://www.spacex.com/"
+  - name: Vector 35 - Binary Ninja
+    icon: https://static.lac.tf/sponsors/binary-ninja.png
+    description: "Binary Ninja is an interactive decompiler, disassembler, debugger, and binary analysis platform built by reverse engineers, for reverse engineers. Developed with a focus on delivering a high-quality API for automation and a clean and usable GUI, Binary Ninja is in active use by malware analysts, vulnerability researchers, and software developers worldwide."
+    url: "https://binary.ninja/"
+  - name: Amber by LatticeWork
+    icon: https://static.lac.tf/sponsors/amber_latticework.png
+    description: "Store your data locally and access it from anywhere without subscription fees! UCLA students, open a ticket in the LA CTF Discord for a 25% discount."
+    url: "https://www.myamberlife.com/"
+  - name: The Aerospace Corporation
+    icon: https://static.lac.tf/sponsors/aerospace.png
+    description: "Aerospace operates the only federally funded research and development center (FFRDC) committed exclusively to the space enterprise. Our technical experts span every discipline of space-related science and engineering."
+    url: "https://aerospace.org/"
 
 lactfPostTime: 1736546400000
 startTime: 1738987200000
