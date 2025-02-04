@@ -13,5 +13,5 @@
 export const getScore = (rl: number, rh: number, maxSolves: number, solves: number): number => {
   const hardCurve = 428 * (0.995) ** solves + 75;
   const easyCurve = 428 * (0.9978) ** solves;
-  return Math.min(Math.max(hardCurve, easyCurve, rl), rh);
+  return Math.round(Math.min(Math.max(hardCurve, easyCurve, rl), rh));
 }
