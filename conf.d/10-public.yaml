@@ -39,7 +39,7 @@ homeContent: |
   1. Each problem has a point value listed. Team rankings are decided by number of points, highest to lowest. If two teams have the same number of points, the tiebreak is which team reached their top score first, excluding trivial category challenges.
   2. Challenges are subject to **dynamic scoring**: the **more** teams that solve a particular challenge, the **less** points that challenge will be worth to **all** teams who solved the challenge. There is no time score bonus awarded.
   3. The prize winning teams will be contacted by us after the contest ends. Please make sure the email used to register the team is the email you'd like us to contact. **Note: Prizes are in the form of US Amazon Gift Cards**.
-  4. Teams **must** solve the `welcome/rules` challenge in order to be eligible to win prizes as a confirmation they have read and agree to the rules. The flag to solve this challenge is `lactf{i_agree_to_the_rules_on_behalf_of_my_entire_team}`.
+  4. Teams **must** solve the `welcome/rules` challenge in order to be eligible to win prizes as a confirmation they have read and agree to the rules. The flag to solve this challenge is `lactf{my_entire_team_agrees_to_follow_the_rules}`.
   5. We reserve the right to require write-ups from the winning teams for any problems we choose as proofs of solution.
   6. In the event that a team that is ineligible for prizes wins a prize, the next eligible team will recieve that prize. It may take some time for prizes to settle; please be patient!
   7. Anyone who violates these rules will be disqualified. **All decisions made by LA CTF organizers are final**.
