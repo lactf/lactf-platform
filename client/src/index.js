@@ -129,7 +129,8 @@ export default withStyles({
       borderRadius: '5px',
       margin: '10px 0',
       color: '#ccc',
-      border: '1px solid #ffffff1a'
+      border: '1px solid #ffffff1a',
+      wordBreak: 'break-word'
     },
     '& code': {
       padding: '.2em .4em',
