@@ -64,6 +64,14 @@ homeContent: |
   <!--[lactf /div]-->
 
 sponsors:
+  - name: The Aerospace Corporation
+    icon: https://static.lac.tf/sponsors/aerospace.png
+    description: "**UCLA CS Affiliate** Aerospace operates the only federally funded research and development center (FFRDC) committed exclusively to the space enterprise. Our technical experts span every discipline of space-related science and engineering."
+    url: "https://aerospace.org/"
+  - name: Lockheed Martin
+    icon: https://static.lac.tf/sponsors/lockheed_martin.svg
+    description: "**UCLA CS Affiliate** Lockheed Martin is a leading global security, defense and aerospace contractor, ensuring those we serve always stay ahead of ready."
+    url: "https://www.lockheedmartin.com/"
   - name: OtterSec
     icon: https://static.lac.tf/sponsors/ottersec.png
     description: "OtterSec is the leading blockchain security audit team, working closely with various Layer 1s and the protocols built on them."
@@ -72,10 +80,6 @@ sponsors:
     icon: https://static.lac.tf/sponsors/microsoft.jpg
     description: "Microsoft's mission is to empower every person and every organization on the planet to achieve more."
     url: "https://www.microsoft.com/"
-  - name: Lockheed Martin
-    icon: https://static.lac.tf/sponsors/lockheed_martin.svg
-    description: "Lockheed Martin is a leading global security, defense and aerospace contractor, ensuring those we serve always stay ahead of ready."
-    url: "https://www.lockheedmartin.com/"
   - name: Google Cloud
     icon: https://static.lac.tf/sponsors/google_cloud.png
     description: "Meet your business challenges head on with cloud computing services from Google, including data management, hybrid & multi-cloud, and AI & ML. Infra sponsored by: <br/> [https://goo.gle/ctfsponsorship](https://goo.gle/ctfsponsorship)"
@@ -98,12 +102,8 @@ sponsors:
     url: "https://binary.ninja/"
   - name: Amber by LatticeWork
     icon: https://static.lac.tf/sponsors/amber_latticework.png
-    description: "Store your data locally and access it from anywhere without subscription fees! UCLA students, open a ticket in the LA CTF Discord for a 25% discount."
+    description: "Store your data locally and access it from anywhere without subscription fees! UCLA students, open a ticket in the LA CTF Discord for a 30% discount."
     url: "https://www.myamberlife.com/"
-  - name: The Aerospace Corporation
-    icon: https://static.lac.tf/sponsors/aerospace.png
-    description: "Aerospace operates the only federally funded research and development center (FFRDC) committed exclusively to the space enterprise. Our technical experts span every discipline of space-related science and engineering."
-    url: "https://aerospace.org/"
 
 lactfPostTime: 1736546400000
 startTime: 1738987200000
