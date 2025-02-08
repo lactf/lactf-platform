@@ -7,12 +7,13 @@
 // min(max(428 * (0.995) ** solves + 75, 428 * (0.9978) ** solves, 100), 500)
 //
 // put below into desmos to see curve:
-// y_{2}=428\left(.995\right)^{x}+75
-// y_{3}=428\left(.9978\right)^{x}
-// y=\min\left(\max\left(y_{2},\ y_{3},\ 100\right),\ 500\right)
+// y_{2}=428\left(.99\right)^{x}+75
+// y_{3}=428\left(b\right)^{\left(x+a\right)}
+// b=0.9984
+// a=53
+// y=\min\left(\max\left(y_{2},y_{3},100\right),\ 500\right)
 export const getScore = (rl: number, rh: number, maxSolves: number, solves: number): number => {
-  const hardCurve = 428 * (0.995) ** solves + 75;
-  const easyCurve = 428 * (0.9978) ** solves;
-  const veryEasyCurve = -0.055 * solves + 150;
-  return Math.round(Math.min(Math.max(hardCurve, easyCurve, veryEasyCurve, rl), rh));
+  const hardCurve = 428 * (0.99) ** solves + 76;
+  const easyCurve = 428 * (0.9984) ** (solves + 53);
+  return Math.round(Math.min(Math.max(hardCurve, easyCurve, rl), rh));
 }
