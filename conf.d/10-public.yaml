@@ -11,6 +11,13 @@ homeContent: |
 
   <timer></timer>
   
+  <!--[lactf div class="lactf-rules card"]-->
+
+  ## Challenge Archive
+  All of our past challenges, including deployment configs and some author solve scripts, can be found here: [https://github.com/uclaacm/lactf-archive](https://github.com/uclaacm/lactf-archive).  
+  
+  <!--[lactf /div]-->
+  
   <!--[lactf div class="lactf-sponsors card"]-->
 
   ## Sponsors
@@ -39,7 +46,7 @@ homeContent: |
   1. Each problem has a point value listed. Team rankings are decided by number of points, highest to lowest. If two teams have the same number of points, the tiebreak is which team reached their top score first, excluding trivial category challenges.
   2. Challenges are subject to **dynamic scoring**: the **more** teams that solve a particular challenge, the **less** points that challenge will be worth to **all** teams who solved the challenge. There is no time score bonus awarded.
   3. The prize winning teams will be contacted by us after the contest ends. Please make sure the email used to register the team is the email you'd like us to contact. **Note: Prizes are in the form of US Amazon Gift Cards**.
-  4. Teams **must** solve the `welcome/rules` challenge in order to be eligible to win prizes as a confirmation they have read and agree to the rules. The flag to solve this challenge is `lactf{my_entire_team_agrees_to_follow_the_rules}`.
+  4. Teams **must** solve the `welcome/rules` challenge in order to be eligible to win prizes as a confirmation they have read and agree to the rules. The flag to solve this challenge is `lactf{i_understand_and_agree_to_the_rules}`.
   5. We reserve the right to require write-ups from the winning teams for any problems we choose as proofs of solution.
   6. In the event that a team that is ineligible for prizes wins a prize, the next eligible team will recieve that prize. It may take some time for prizes to settle; please be patient!
   7. Anyone who violates these rules will be disqualified. **All decisions made by LA CTF organizers are final**.
@@ -56,22 +63,7 @@ homeContent: |
 
   <!--[lactf /div]-->
 
-  <!--[lactf div class="lactf-rules card"]-->
-
-  ## Challenge Archive
-  All of our past challenges, including deployment configs and some author solve scripts, can be found here: [https://github.com/uclaacm/lactf-archive](https://github.com/uclaacm/lactf-archive).  
-  
-  <!--[lactf /div]-->
-
 sponsors:
-  - name: The Aerospace Corporation
-    icon: https://static.lac.tf/sponsors/aerospace.png
-    description: "**UCLA CS Affiliate** Aerospace operates the only federally funded research and development center (FFRDC) committed exclusively to the space enterprise. Our technical experts span every discipline of space-related science and engineering."
-    url: "https://aerospace.org/"
-  - name: Lockheed Martin
-    icon: https://static.lac.tf/sponsors/lockheed_martin.svg
-    description: "**UCLA CS Affiliate** Lockheed Martin is a leading global security, defense and aerospace contractor, ensuring those we serve always stay ahead of ready."
-    url: "https://www.lockheedmartin.com/"
   - name: OtterSec
     icon: https://static.lac.tf/sponsors/ottersec.png
     description: "OtterSec is the leading blockchain security audit team, working closely with various Layer 1s and the protocols built on them."
@@ -80,6 +72,10 @@ sponsors:
     icon: https://static.lac.tf/sponsors/microsoft.jpg
     description: "Microsoft's mission is to empower every person and every organization on the planet to achieve more."
     url: "https://www.microsoft.com/"
+  - name: Lockheed Martin
+    icon: https://static.lac.tf/sponsors/lockheed_martin.svg
+    description: "Lockheed Martin is a leading global security, defense and aerospace contractor, ensuring those we serve always stay ahead of ready."
+    url: "https://www.lockheedmartin.com/"
   - name: Google Cloud
     icon: https://static.lac.tf/sponsors/google_cloud.png
     description: "Meet your business challenges head on with cloud computing services from Google, including data management, hybrid & multi-cloud, and AI & ML. Infra sponsored by: <br/> [https://goo.gle/ctfsponsorship](https://goo.gle/ctfsponsorship)"
@@ -102,8 +98,12 @@ sponsors:
     url: "https://binary.ninja/"
   - name: Amber by LatticeWork
     icon: https://static.lac.tf/sponsors/amber_latticework.png
-    description: "Store your data locally and access it from anywhere without subscription fees! UCLA students, open a ticket in the LA CTF Discord for a 30% discount."
+    description: "Store your data locally and access it from anywhere without subscription fees! UCLA students, open a ticket in the LA CTF Discord for a 25% discount."
     url: "https://www.myamberlife.com/"
+  - name: The Aerospace Corporation
+    icon: https://static.lac.tf/sponsors/aerospace.png
+    description: "Aerospace operates the only federally funded research and development center (FFRDC) committed exclusively to the space enterprise. Our technical experts span every discipline of space-related science and engineering."
+    url: "https://aerospace.org/"
 
 lactfPostTime: 1736546400000
 startTime: 1738987200000
