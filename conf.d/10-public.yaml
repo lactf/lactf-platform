@@ -57,14 +57,42 @@ homeContent: |
   <!--[lactf /div]-->
 
 sponsors:
+  - name: Verkada
+    icon: https://static.lac.tf/sponsors/verkada.png
+    description: "Protect people and places in a privacy-sensitive way. Trusted by over 33,000 organizations, Verkada builds physical security solutions that integrate seamlessly behind a single, cloud-based software platform."
+    url: "https://www.verkada.com/"
+  - name: OtterSec
+    icon: https://static.lac.tf/sponsors/ottersec.png
+    description: "OtterSec is the leading blockchain security audit team, working closely with various Layer 1s and the protocols built on them."
+    url: "https://osec.io/"
+  - name: Zellic
+    icon: https://static.lac.tf/sponsors/zellic.png
+    description: "Zellic is a security research firm. We hire talented hackers to break critical software, ranging from virtual machines to compilers and major web apps to proof systems. Before Zellic, we founded perfect blue, the #1 CTF team in 2020 and 2021. We offer a comprehensive benefits package and direct equity participation, as well as flexible hours, remote work, and both full-time and part-time roles. To learn more about Zellic, check out our blog: zellic.io/auditooor-grindset. Work at Zellic: jobs@zellic.io | @gf_256"
+    url: "https://www.zellic.io/"
+  - name: Trail of Bits
+    icon: https://static.lac.tf/sponsors/trail-of-bits.png
+    description: "Trail of Bits helps secure the world's most targeted organizations and products. We combine high-end security research with a real-world attacker mentality to reduce risk and fortify code."
+    url: "https://www.trailofbits.com/"
+  - name: Amber by LatticeWork
+    icon: https://static.lac.tf/sponsors/latticework.png
+    description: "Store your data locally and access it from anywhere without subscription fees!"
+    url: "https://www.myamberlife.com/"
   - name: Google Cloud
     icon: https://static.lac.tf/sponsors/google_cloud.png
-    description: "Meet your business challenges head on with cloud computing services from Google, including data management, hybrid & multi-cloud, and AI & ML. Infra sponsored by: <br/> [https://goo.gle/ctfsponsorship](https://goo.gle/ctfsponsorship)"
+    description: "Meet your business challenges head on with cloud computing services from Google, including data management, hybrid & multi-cloud, and AI & ML. Infra sponsored by goo.gle/ctfsponsorship"
     url: "https://goo.gle/ctfsponsorship"
-  - name: Amber by LatticeWork
-    icon: https://static.lac.tf/sponsors/amber_latticework.png
-    description: "Store your data locally and access it from anywhere without subscription fees! UCLA students, open a ticket in the LA CTF Discord for a 25% discount."
-    url: "https://www.myamberlife.com/"
+  - name: OffSec
+    icon: https://static.lac.tf/sponsors/offsec.png
+    description: "OffSec is a global leader in cybersecurity education, built on a commitment to excellence, integrity, and growth. The OffSec User Generated Content Program is a space built for creators like you. Turn your ideas into real labs that thousands of learners worldwide will use to practice and grow their skills."
+    url: "https://www.offsec.com/community/ugc/"
+  - name: Vector 35 - Binary Ninja
+    icon: https://static.lac.tf/sponsors/binary-ninja.png
+    description: "Binary Ninja is an interactive decompiler, disassembler, debugger, and binary analysis platform built by reverse engineers, for reverse engineers. Developed with a focus on delivering a high-quality API for automation and a clean and usable GUI, Binary Ninja is in active use by malware analysts, vulnerability researchers, and software developers worldwide."
+    url: "https://binary.ninja/"
+  - name: Black Hills Information Security
+    icon: https://static.lac.tf/sponsors/bhis.png
+    description: "At Black Hills Information Security (BHIS), we strive to strengthen our customers’ information security infrastructure and employees through penetration testing, consulting, and defensive security services. Since our founding in 2008, companies of all sizes, from small community banks to Fortune 100 companies, have entrusted us with their business."
+    url: "https://www.blackhillsinfosec.com/"
 
 lactfPostTime: 1768118400000
 startTime: 1770429600000
