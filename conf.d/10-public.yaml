@@ -11,15 +11,6 @@ homeContent: |
 
   <timer></timer>
   
-  <!--[lactf div class="lactf-rules card"]-->
-
-  ## Challenge Archive
-  **Challenges are now offline.**
-  
-  All of our past challenges, including deployment configs and some author solve scripts, can be found here: [https://github.com/uclaacm/lactf-archive](https://github.com/uclaacm/lactf-archive).
-  
-  <!--[lactf /div]-->
-  
   <!--[lactf div class="lactf-sponsors card"]-->
 
   ## Sponsors
@@ -75,9 +66,9 @@ sponsors:
     description: "Store your data locally and access it from anywhere without subscription fees! UCLA students, open a ticket in the LA CTF Discord for a 25% discount."
     url: "https://www.myamberlife.com/"
 
-lactfPostTime: 1736546400000
-startTime: 1738987200000
-endTime: 1739138400000
+lactfPostTime: 1768118400000
+startTime: 1770429600000
+endTime: 1770602400000
 
 divisions:
   ucla: UCLA
