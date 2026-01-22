@@ -71,6 +71,9 @@ export default {
       }]
     }
 
+    //log
+    await db.attempts.newAttempt({ id: uuidv4(), challengeid, userid: uuid, submission: submittedFlag, createdat: new Date() })
+
     const bufSubmittedFlag = Buffer.from(submittedFlag)
     const bufCorrectFlag = Buffer.from(challenge.flag)
 
