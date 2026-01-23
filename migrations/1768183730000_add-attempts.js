@@ -4,6 +4,7 @@ exports.up = function (pgm) {
     challengeid: { type: 'string', notNull: true },
     userid: { type: 'uuid', notNull: true },
     submission: { type: 'string', notNull: true },
+    createdat: { type: 'timestamp', notNull: true }
   })
 }
 
