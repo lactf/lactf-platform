@@ -28,6 +28,7 @@ export type ServerConfig = {
       user: string;
       password: string;
       database: string;
+      ssl?: boolean;
     }
     redis: string | {
       host: string;
@@ -140,7 +141,8 @@ const envConfig: PartialDeep<ServerConfig> = {
       port: nullsafeParseInt(process.env.RCTF_DATABASE_PORT),
       user: process.env.RCTF_DATABASE_USERNAME,
       password: process.env.RCTF_DATABASE_PASSWORD,
-      database: process.env.RCTF_DATABASE_DATABASE
+      database: process.env.RCTF_DATABASE_DATABASE,
+      ssl: Boolean(nullsafeParseInt(process.env.RCTF_DATABASE_SSL))
     },
     redis: process.env.RCTF_REDIS_URL ?? {
       host: process.env.RCTF_REDIS_HOST,
